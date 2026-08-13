@@ -1,0 +1,2563 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InternDinkop — Dashboard</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="theme-color" content="#0f9488">
+
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Chart.js untuk grafik (dengan fallback CDN kedua kalau yang pertama gagal) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script>
+  if(typeof Chart === 'undefined'){
+    document.write('<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"><\/script>');
+  }
+</script>
+
+<style>
+  :root{
+    --sidebar-bg: #0b3b3a;
+    --sidebar-bg-2: #0e4746;
+    --sidebar-active: #135453;
+    --sidebar-text: #bcd7d5;
+    --sidebar-text-dim: #7fa6a3;
+
+    --teal: #0f9488;
+    --teal-dark: #0c7d73;
+    --teal-soft: #e3f4f1;
+    --orange: #f2994a;
+    --orange-soft: #fdecdd;
+    --yellow: #f2c94c;
+    --yellow-soft: #fdf6dc;
+    --slate: #6b7fa3;
+    --slate-soft: #e9edf6;
+
+    --bg-page: #eef2f2;
+    --card-bg: #ffffff;
+    --text-dark: #1c2b2a;
+    --text-muted: #6b7c7b;
+    --text-faint: #93a3a2;
+    --border-color: #e6ecec;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+    --shadow-card: 0 2px 14px rgba(13, 46, 45, 0.06);
+  }
+
+  *{ box-sizing: border-box; }
+  html, body{ margin:0; padding:0; overflow-x:hidden; max-width:100%; }
+  body{
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg-page);
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+  }
+  a{ color:inherit; text-decoration:none; }
+  button{ font-family:inherit; }
+  ::selection{ background: var(--teal-soft); }
+  :focus-visible{ outline: 2px solid var(--teal); outline-offset: 2px; }
+
+  .app{ display:block; min-height:100vh; max-width:100%; }
+
+  /* ---------- SIDEBAR ---------- */
+  .sidebar{
+    width: 250px;
+    flex-shrink:0;
+    background: linear-gradient(180deg, var(--sidebar-bg), var(--sidebar-bg-2) 90%);
+    color: var(--sidebar-text);
+    display:flex;
+    flex-direction:column;
+    padding: 22px 16px;
+    position: fixed;
+    top:0; left:0; bottom:0;
+    height:100vh;
+    transition: transform .25s ease;
+    z-index: 50;
+    overflow-y:auto;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    padding: 6px 8px 26px 8px;
+    font-weight:800; font-size:19px; color:#fff;
+  }
+  .brand-icon{
+    width:34px; height:34px; border-radius:10px;
+    background: var(--teal);
+    display:flex; align-items:center; justify-content:center;
+    font-size:17px;
+  }
+  .nav{ display:flex; flex-direction:column; gap:4px; margin-top:4px; }
+  .nav-item{
+    display:flex; align-items:center; gap:12px;
+    padding: 11px 12px;
+    border-radius: var(--radius-sm);
+    font-size:14.5px; font-weight:500;
+    color: var(--sidebar-text);
+    cursor:pointer;
+    border-left: 3px solid transparent;
+    transition: background .15s ease, color .15s ease;
+  }
+  .nav-item .ic{ width:18px; text-align:center; font-size:15px; }
+  .nav-item:hover{ background: rgba(255,255,255,0.06); color:#fff; }
+  .nav-item.active{
+    background: var(--sidebar-active);
+    color:#fff;
+    border-left-color: var(--teal);
+    font-weight:600;
+  }
+  .sidebar-footer{ padding: 14px 8px 4px; font-size:11.5px; color: var(--sidebar-text-dim); }
+  .nav-bottom{ margin-top:auto; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08); }
+
+  #dashboardPage, #dataAnakMagangPage, #rekapPerubahanPage, #buktiMagangPage, #userGuidePage{
+    animation: pageFadeIn .22s ease;
+  }
+  @keyframes pageFadeIn{
+    from{ opacity:0; transform: translateY(6px); }
+    to{ opacity:1; transform: translateY(0); }
+  }
+
+  .sidebar-toggle{
+    display:none;
+    position: fixed; top:14px; left:14px; z-index:60;
+    width:38px; height:38px; border-radius:10px;
+    background: var(--sidebar-bg); color:#fff; border:none;
+    font-size:17px; cursor:pointer;
+  }
+
+  /* ---------- MAIN ---------- */
+  .main{ margin-left:250px; min-width:0; display:flex; flex-direction:column; min-height:100vh; }
+
+  .topbar{
+    background:#fff;
+    border-bottom:1px solid var(--border-color);
+    padding: 16px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:20px;
+    position: sticky; top:0; z-index:20;
+    min-width:0;
+  }
+  .topbar h1{ font-size:21px; margin:0; font-weight:800; min-width:0; }
+  .topbar-right{ display:flex; align-items:center; gap:16px; flex-shrink:0; }
+
+  .search-box{
+    display:flex; align-items:center; gap:8px;
+    background: var(--bg-page);
+    border:1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 8px 14px;
+    min-width: 230px;
+  }
+  .search-box input{
+    border:none; background:transparent; outline:none;
+    font-size:13.5px; width:100%; color:var(--text-dark);
+  }
+  .search-box .ic{ color: var(--text-faint); font-size:14px; }
+
+  .notif{ position:relative; }
+  .bell{
+    position:relative; width:38px; height:38px; border-radius:50%;
+    background: var(--bg-page); border:none; padding:0; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    font-size:16px; color: var(--text-muted); flex-shrink:0;
+  }
+  .bell:hover{ background: var(--teal-soft); color: var(--teal-dark); }
+  .bell .dot{ position:absolute; top:8px; right:9px; width:7px; height:7px; border-radius:50%; background:#e0503a; }
+
+  .notif-menu{
+    position:absolute; right:0; top:calc(100% + 8px);
+    background:#fff; border:1px solid var(--border-color); border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card); width:330px; max-width:88vw; display:none; z-index:30;
+  }
+  .notif-menu.open{ display:block; }
+  .notif-menu-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:12px 14px; border-bottom:1px solid var(--border-color);
+    font-size:13px; font-weight:800; color: var(--text-dark);
+  }
+  .notif-clear-btn{
+    font-size:11.5px; font-weight:600; color: var(--teal-dark); background:none; border:none;
+    cursor:pointer; padding:4px 8px; border-radius: var(--radius-sm);
+  }
+  .notif-clear-btn:hover{ background: var(--bg-page); }
+  .notif-list{ max-height:340px; overflow-y:auto; padding:6px; }
+  .notif-item{ display:flex; gap:10px; padding:10px 30px 10px 8px; border-radius: var(--radius-sm); position:relative; }
+  .notif-item:hover{ background: var(--bg-page); }
+  .notif-item.unread{ background: var(--teal-soft); }
+  .notif-item.unread:hover{ background: var(--teal-soft); }
+  .notif-item-ic{
+    width:30px; height:30px; border-radius:50%; background:#fff; border:1px solid var(--border-color);
+    display:flex; align-items:center; justify-content:center; font-size:13.5px; flex-shrink:0;
+  }
+  .notif-item-body{ min-width:0; flex:1; }
+  .notif-item-msg{ font-size:12.5px; color: var(--text-dark); line-height:1.5; }
+  .notif-item-time{ font-size:11px; color: var(--text-faint); margin-top:3px; }
+  .notif-item-del{
+    position:absolute; top:8px; right:6px; width:20px; height:20px; border-radius:50%;
+    border:none; background:transparent; color: var(--text-faint); font-size:12px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .notif-item-del:hover{ background:#fff; color:#e0503a; }
+  .notif-empty{ text-align:center; padding:30px 14px; color: var(--text-muted); font-size:12.5px; }
+
+  .avatar-round{
+    width:34px; height:34px; border-radius:50%;
+    background: var(--teal); color:#fff; font-weight:700; font-size:13px;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .chev{ font-size:10px; color:var(--text-faint); margin-left:2px; }
+
+  .content{ padding: 22px 28px 40px; flex:1; }
+
+  .sync-row{
+    display:flex; align-items:center; justify-content:flex-end; gap:10px;
+    font-size:12.5px; color:var(--text-muted); margin-bottom:16px;
+  }
+  .sync-row .demo-flag{ color: var(--orange); font-weight:600; }
+  .refresh-btn{
+    border:1px solid var(--border-color); background:#fff; color:var(--text-muted);
+    border-radius: var(--radius-sm); padding:5px 10px; font-size:12px; cursor:pointer;
+    display:flex; align-items:center; gap:6px;
+  }
+  .refresh-btn:hover{ color: var(--teal); border-color: var(--teal); }
+  .refresh-btn.spinning .ic{ animation: spin .7s linear infinite; }
+  @keyframes spin{ to{ transform: rotate(360deg); } }
+
+  /* ---------- STAT CARDS ---------- */
+  .stats-row{ display:grid; grid-template-columns: repeat(4, 1fr); gap:18px; margin-bottom:18px; }
+  .stat-card{
+    background: var(--card-bg); border-radius: var(--radius-lg); padding:20px;
+    box-shadow: var(--shadow-card);
+    display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+  }
+  .stat-left{ display:flex; gap:14px; align-items:center; }
+  .stat-icon{
+    width:44px; height:44px; border-radius: var(--radius-sm); flex-shrink:0;
+    display:flex; align-items:center; justify-content:center; font-size:19px;
+  }
+  .stat-icon.teal{ background: var(--teal-soft); color: var(--teal-dark); }
+  .stat-icon.orange{ background: var(--orange-soft); color:#c5701f; }
+  .stat-icon.purple{ background: #f1ecfe; color:#7c3aed; }
+  .stat-label{ font-size:11.5px; letter-spacing:.04em; color: var(--text-muted); font-weight:700; text-transform:uppercase; }
+  .stat-value{ font-size:26px; font-weight:800; margin-top:2px; }
+  .stat-delta{
+    background: var(--teal-soft); color: var(--teal-dark); font-weight:700; font-size:12.5px;
+    padding:5px 10px; border-radius:999px; white-space:nowrap;
+  }
+
+  /* ---------- CHARTS ---------- */
+  .charts-row{ display:grid; grid-template-columns: 1.6fr 1fr; gap:18px; margin-bottom:18px; min-width:0; }
+  .card{ background: var(--card-bg); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); padding:20px; min-width:0; max-width:100%; }
+  .card-title{ font-size:12.5px; font-weight:800; letter-spacing:.03em; color: var(--text-dark); text-transform:uppercase; margin:0 0 14px; }
+  .chart-wrap{ height:250px; position:relative; max-width:100%; min-width:0; }
+  .chart-wrap-bar{ height:300px; }
+  .legend-row{ display:flex; flex-wrap:wrap; gap:10px 18px; justify-content:center; margin-top:14px; font-size:12.5px; color: var(--text-muted); }
+  .legend-dot{ display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; }
+  .donut-wrap{ position:relative; height:250px; display:flex; align-items:center; justify-content:center; }
+
+  .pie-layout{ display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+  .pie-legend{
+    flex: 0 0 auto; min-width:150px; max-width:48%;
+    display:flex; flex-direction:column; gap:8px;
+    max-height:250px; overflow-y:auto; padding-right:4px;
+    font-size:12px; color: var(--text-muted);
+  }
+  .pie-legend .leg-item{ display:flex; align-items:flex-start; gap:8px; line-height:1.35; }
+  .pie-legend .leg-item .legend-dot{ margin-top:4px; flex-shrink:0; }
+  .pie-legend .leg-count{ color: var(--text-faint); font-weight:600; }
+  .pie-canvas-wrap{ flex:1 1 220px; min-width:200px; height:250px; position:relative; }
+
+  /* ---------- TABLE CARD ---------- */
+  .table-card{ background: var(--card-bg); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); padding:20px; }
+  .table-head-row{ display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:16px; }
+  .table-title{ font-size:14.5px; font-weight:800; letter-spacing:.03em; text-transform:uppercase; }
+  .filters{ display:flex; gap:10px; flex-wrap:wrap; }
+  .filters select, .filters .search-box{
+    border:1px solid var(--border-color); border-radius: var(--radius-sm);
+    font-size:13px; padding:8px 10px; background:#fff; color:var(--text-dark); min-width:120px;
+  }
+  .filters .search-box{ padding:6px 12px; min-width:190px; }
+
+  .multi-select{ position:relative; }
+  .multi-select-btn{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    border:1px solid var(--border-color); border-radius: var(--radius-sm);
+    font-size:13px; padding:8px 10px; background:#fff; color:var(--text-dark);
+    min-width:120px; cursor:pointer;
+  }
+  .multi-select-btn:hover{ border-color: var(--teal); }
+  .multi-select-btn .chev{ font-size:10px; color:var(--text-faint); }
+  .multi-select-menu{
+    display:none; position:absolute; top:calc(100% + 6px); left:0; z-index:30;
+    background:#fff; border:1px solid var(--border-color); border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card); min-width:170px; padding:6px;
+  }
+  .multi-select-menu.open{ display:block; }
+  .ms-option{
+    display:flex; align-items:center; gap:9px;
+    padding:8px 10px; border-radius: var(--radius-sm);
+    font-size:13.5px; color:var(--text-dark); cursor:pointer;
+  }
+  .ms-option:hover{ background: var(--bg-page); }
+  .ms-option input{ accent-color: var(--teal); width:14px; height:14px; cursor:pointer; }
+
+  table{ width:100%; border-collapse: collapse; }
+  .table-scroll{ overflow:auto; max-height:460px; border:1px solid var(--border-color); border-radius: var(--radius-sm); }
+  .table-scroll thead th{ position:sticky; top:0; background:#fff; z-index:1; }
+  .table-scroll table{ border:none; }
+  thead th{
+    text-align:left; font-size:11.5px; letter-spacing:.03em; text-transform:uppercase;
+    color: var(--text-muted); font-weight:700; padding: 10px 12px; border-bottom:1px solid var(--border-color);
+    white-space:nowrap;
+  }
+  tbody td{ padding: 12px; border-bottom:1px solid var(--border-color); font-size:13.5px; vertical-align:middle; }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr:hover{ background: #fafcfc; }
+  .name-cell{ display:flex; align-items:center; gap:10px; font-weight:600; }
+  .table-empty{ text-align:center; padding:36px 12px; color: var(--text-muted); font-size:13.5px; }
+
+  .badge{ display:inline-block; padding:4px 12px; border-radius:999px; font-size:11.5px; font-weight:800; letter-spacing:.03em; }
+  .badge.aktif{ background: var(--teal); color:#fff; }
+  .badge.selesai{ background: var(--orange); color:#fff; }
+  .badge.akanmulai{ background: var(--slate); color:#fff; }
+  .badge.sertifikasi-sudah{ background: #2f9e6e; color:#fff; }
+  .badge.sertifikasi-belum{ background: #e2e6ef; color:#6b7fa3; }
+
+  .table-foot{ display:flex; justify-content:space-between; align-items:center; margin-top:14px; font-size:12.5px; color:var(--text-muted); }
+
+  /* ---------- UNIVERSITY BOXES ---------- */
+  .uni-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap:16px;
+  }
+  .uni-box{
+    display:flex; align-items:center; gap:14px;
+    background: var(--bg-page);
+    border:1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding:16px;
+    cursor:pointer;
+    transition: box-shadow .15s ease, transform .15s ease, border-color .15s ease;
+  }
+  .uni-box:hover{ box-shadow: var(--shadow-card); transform: translateY(-1px); border-color: var(--teal); }
+  .uni-box.active{ border-color: var(--teal); box-shadow: 0 0 0 2px rgba(15,148,136,.18); }
+  .uni-logo{
+    width:46px; height:46px; border-radius: var(--radius-sm); flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    color:#fff; font-weight:800; font-size:14px; letter-spacing:.02em;
+  }
+  .uni-info{ min-width:0; }
+  .uni-name{
+    font-size:13px; font-weight:700; color: var(--text-dark);
+    line-height:1.3;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  }
+  .uni-count{ font-size:12px; color: var(--text-muted); margin-top:3px; font-weight:600; }
+  .uni-empty{ text-align:center; padding:36px 12px; color: var(--text-muted); font-size:13.5px; }
+
+  .uni-detail-title{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .uni-detail-clear{
+    font-size:12.5px; font-weight:600; color: var(--teal); background:none; border:none;
+    cursor:pointer; padding:4px 8px; border-radius: var(--radius-sm);
+  }
+  .uni-detail-clear:hover{ background: var(--bg-page); }
+
+  .rekap-note{ font-size:12.5px; color: var(--text-muted); margin:0 0 16px; }
+  .year-tabs{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px; }
+  .year-tab{
+    border:1px solid var(--border-color); background:#fff; color:var(--text-muted);
+    border-radius:999px; padding:8px 18px; font-size:13px; font-weight:700; cursor:pointer;
+  }
+  .year-tab:hover{ border-color: var(--teal); color: var(--teal-dark); }
+  .year-tab.active{ background: var(--teal); border-color: var(--teal); color:#fff; }
+  .year-tab .count-pill{ font-weight:600; opacity:.85; margin-left:4px; }
+  .year-summary{ font-size:12.5px; color: var(--text-muted); margin-bottom:16px; }
+  .month-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap:14px; }
+  .month-card{
+    background: var(--bg-page); border:1px solid var(--border-color);
+    border-radius: var(--radius-md); padding:14px 16px;
+  }
+  .month-card.empty{ opacity:.55; }
+  .month-card-head{ display:flex; align-items:center; justify-content:space-between; cursor:pointer; }
+  .month-card-title{ font-size:13.5px; font-weight:800; color: var(--text-dark); }
+  .month-card-count{ font-size:12px; font-weight:700; color: var(--teal-dark); background: var(--teal-soft); padding:3px 10px; border-radius:999px; }
+  .month-card-count.zero{ color: var(--text-faint); background:#fff; }
+  .month-card-list{ margin-top:10px; display:none; flex-direction:column; gap:6px; max-height:260px; overflow-y:auto; padding-right:4px; }
+  .month-card-list.open{ display:flex; }
+  .month-person{ font-size:12.5px; color: var(--text-dark); line-height:1.4; padding-bottom:6px; border-bottom:1px dashed var(--border-color); }
+  .month-person:last-child{ border-bottom:none; padding-bottom:0; }
+  .month-person .uni{ display:block; color: var(--text-muted); font-size:11.5px; }
+  .month-card-empty-text{ font-size:12px; color: var(--text-faint); margin-top:8px; }
+  .rekap-empty{ text-align:center; padding:28px 12px; color: var(--text-muted); font-size:13px; }
+
+  /* ---------- BUKTI MAGANG MAHASISWA ---------- */
+  .bukti-layout{ display:grid; grid-template-columns: 330px 1fr; gap:18px; align-items:start; }
+
+  .bukti-list-card{ max-height:640px; display:flex; flex-direction:column; }
+  .bukti-kec-list{ overflow-y:auto; flex:1; padding-right:4px; margin-top:2px; }
+
+  .kec-group{ border-bottom:1px dashed var(--border-color); }
+  .kec-group:last-child{ border-bottom:none; }
+  .kec-head{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    padding:11px 8px; cursor:pointer; border-radius: var(--radius-sm);
+  }
+  .kec-head:hover{ background: var(--bg-page); }
+  .kec-name{ display:flex; align-items:center; gap:9px; font-size:13.5px; font-weight:700; color: var(--text-dark); min-width:0; }
+  .kec-name span.chev{ flex-shrink:0; font-size:10px; color: var(--text-faint); transition: transform .15s ease; display:inline-block; }
+  .kec-group.open .kec-name span.chev{ transform: rotate(90deg); color: var(--teal); }
+  .kec-count-pill{
+    font-size:11px; font-weight:800; color: var(--teal-dark); background: var(--teal-soft);
+    padding:3px 10px; border-radius:999px; flex-shrink:0;
+  }
+
+  .mhs-list{ display:none; flex-direction:column; gap:2px; padding: 2px 4px 12px 25px; }
+  .kec-group.open .mhs-list{ display:flex; }
+  .mhs-item{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    padding:8px 10px; border-radius: var(--radius-sm); cursor:pointer;
+    font-size:12.5px; color: var(--text-muted); border-left:2px solid transparent;
+  }
+  .mhs-item:hover{ background: var(--bg-page); color: var(--text-dark); }
+  .mhs-item.active{ background: var(--teal-soft); color: var(--teal-dark); font-weight:700; border-left-color: var(--teal); }
+  .mhs-usaha-count{ font-size:10.5px; font-weight:700; color: var(--text-faint); white-space:nowrap; }
+  .mhs-item.active .mhs-usaha-count{ color: var(--teal-dark); }
+
+  .bukti-empty-note{ text-align:center; padding:30px 12px; color: var(--text-muted); font-size:13px; }
+
+  .bukti-detail-card{ min-height:460px; display:flex; flex-direction:column; }
+  .bukti-detail-empty{
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; gap:10px; flex:1; min-height:420px; color: var(--text-muted); font-size:13.5px;
+  }
+  .bukti-detail-empty-ic{ font-size:36px; opacity:.45; }
+
+  .bukti-detail-header{ display:flex; align-items:center; gap:14px; padding-bottom:16px; margin-bottom:16px; border-bottom:1px solid var(--border-color); }
+  .bukti-detail-avatar{
+    width:52px; height:52px; border-radius:50%; background: var(--teal); color:#fff;
+    font-weight:800; font-size:17px; display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .bukti-detail-name{ font-size:16.5px; font-weight:800; }
+  .bukti-detail-meta{ font-size:12.5px; color: var(--text-muted); margin-top:4px; }
+
+  .bukti-usaha-scroll{ max-height:460px; overflow-y:auto; display:flex; flex-direction:column; gap:10px; padding-right:4px; }
+  .usaha-card{
+    background: var(--bg-page); border:1px solid var(--border-color); border-radius: var(--radius-md);
+    padding:14px 16px; display:flex; gap:12px; align-items:flex-start;
+    transition: box-shadow .15s ease, border-color .15s ease;
+  }
+  .usaha-card:hover{ border-color: var(--teal); box-shadow: var(--shadow-card); }
+  .usaha-badge{
+    width:36px; height:36px; border-radius: var(--radius-sm); background:#fff; border:1px solid var(--border-color);
+    display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0; color: var(--teal-dark);
+  }
+  .usaha-info{ min-width:0; }
+  .usaha-name{ font-size:13.5px; font-weight:700; color: var(--text-dark); line-height:1.35; }
+  .usaha-addr{ font-size:12px; color: var(--text-muted); margin-top:4px; line-height:1.45; }
+  .usaha-jenis{
+    display:inline-block; margin-top:7px; font-size:10.5px; font-weight:800; letter-spacing:.03em;
+    text-transform:uppercase; color: var(--teal-dark); background: var(--teal-soft); padding:3px 9px; border-radius:999px;
+  }
+
+  @media (max-width: 900px){
+    .bukti-layout{ grid-template-columns: 1fr; }
+    .bukti-list-card{ max-height:340px; }
+  }
+
+  /* ---------- USER GUIDE ---------- */
+  .guide-item{
+    border-bottom:1px solid var(--border-color);
+  }
+  .guide-item:last-child{ border-bottom:none; }
+  .guide-summary{
+    list-style:none;
+    display:flex; align-items:center; gap:10px;
+    padding:13px 6px;
+    font-size:13.5px; font-weight:700; color: var(--text-dark);
+    cursor:pointer; border-radius: var(--radius-sm);
+  }
+  .guide-summary::-webkit-details-marker{ display:none; }
+  .guide-summary:hover{ background: var(--bg-page); }
+  .guide-summary-ic{
+    width:26px; height:26px; border-radius:8px; background: var(--teal-soft); color: var(--teal-dark);
+    display:flex; align-items:center; justify-content:center; font-size:13px; flex-shrink:0;
+  }
+  .guide-summary::after{
+    content:'▾'; margin-left:auto; font-size:11px; color: var(--text-faint); transition: transform .15s ease;
+  }
+  .guide-item[open] .guide-summary::after{ transform: rotate(180deg); }
+  .guide-content{
+    padding: 2px 6px 16px 44px;
+    font-size:13px; line-height:1.65; color: var(--text-muted);
+  }
+  .guide-content p{ margin: 0 0 10px; }
+
+  .guide-quickstart{
+    background: var(--teal-soft); border:1px solid rgba(15,148,136,.18);
+    border-radius: var(--radius-md); padding:14px 16px; margin-bottom:18px;
+  }
+  .guide-quickstart-title{ font-size:13px; font-weight:800; color: var(--teal-dark); margin-bottom:8px; }
+  .guide-quickstart ul{ margin:0; padding-left:20px; }
+  .guide-quickstart li{ font-size:12.5px; color: var(--text-dark); line-height:1.9; }
+
+  .guide-source-card{
+    background: var(--bg-page); border:1px solid var(--border-color); border-radius: var(--radius-md);
+    padding:12px 14px; margin-bottom:12px;
+  }
+  .guide-source-title{ font-size:13px; font-weight:800; color: var(--text-dark); margin-bottom:4px; }
+  .guide-source-desc{ font-size:12.5px; color: var(--text-muted); line-height:1.6; margin-bottom:8px; }
+  .guide-link{
+    display:inline-block; font-size:12.5px; font-weight:700; color: var(--teal-dark);
+    background:#fff; border:1px solid var(--border-color); border-radius:999px; padding:5px 12px;
+  }
+  .guide-link:hover{ border-color: var(--teal); background: var(--teal-soft); }
+
+  .guide-source-note{
+    margin-top:10px; font-size:11.5px; font-style:italic; color: var(--text-faint);
+  }
+
+  .setup-banner{
+    background: var(--orange-soft); border:1px solid #f4d3ac; color:#7a4b12;
+    border-radius: var(--radius-md); padding:12px 16px; font-size:13px; margin-bottom:16px;
+    display:flex; align-items:flex-start; gap:10px; line-height:1.5;
+  }
+  .setup-banner code{ background:#fff; padding:1px 6px; border-radius:4px; font-size:12px; }
+
+  @media (max-width: 1080px){
+    .charts-row{ grid-template-columns: 1fr; }
+    .stats-row{ grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 760px){
+    .sidebar{ transform: translateX(-100%); box-shadow: 0 0 30px rgba(0,0,0,.25); }
+    .sidebar.open{ transform: translateX(0); }
+    .sidebar-toggle{ display:flex; align-items:center; justify-content:center; }
+    .main{ margin-left:0; }
+    .content{ padding: 70px 16px 32px; max-width:100%; }
+    .topbar{ padding: 14px 12px 14px 60px; gap:10px; }
+    .topbar h1{ font-size:15.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .topbar-right{ gap:8px; }
+    .chev{ display:none; }
+    .stats-row{ grid-template-columns: 1fr; }
+    .search-box{ display:none; }
+    .filters .search-box{ display:flex; }
+  }
+</style>
+</head>
+<body>
+
+<button class="sidebar-toggle" id="sidebarToggle" aria-label="Buka menu">☰</button>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-icon">👥</span>
+      InternDinkop
+    </div>
+    <nav class="nav" id="mainNav">
+      <div class="nav-item active" data-page="dashboard"><span class="ic">▦</span> Dashboard</div>
+      <div class="nav-item" data-page="data"><span class="ic">🗂</span> Data Anak Magang</div>
+      <div class="nav-item" data-page="rekap"><span class="ic">📅</span> Rekap Per Tahun</div>
+      <div class="nav-item" data-page="bukti"><span class="ic">🧾</span> Bukti Magang Mahasiswa</div>
+    </nav>
+    <nav class="nav nav-bottom" id="bottomNav">
+      <div class="nav-item" data-page="guide"><span class="ic">📘</span> User Guide</div>
+    </nav>
+    <div class="sidebar-footer">InternDinkop — Dashboard Magang</div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <h1 id="pageGreeting">Selamat Datang, Admin HR</h1>
+      <div class="topbar-right">
+        <div class="search-box">
+          <span class="ic">🔎</span>
+          <input type="text" id="headerSearch" placeholder="Search">
+        </div>
+        <div class="notif">
+          <button type="button" class="bell" id="notifBtn" title="Notifikasi">
+            <span>🔔</span>
+            <span class="dot" id="notifDot" style="display:none;"></span>
+          </button>
+          <div class="notif-menu" id="notifMenu">
+            <div class="notif-menu-head">
+              <span>Notifikasi</span>
+              <button type="button" id="notifClearBtn" class="notif-clear-btn">Hapus semua</button>
+            </div>
+            <div class="notif-list" id="notifList"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <div id="setupBanner"></div>
+
+      <div class="sync-row">
+        <span id="syncText">Sumber Data: Google Sheets</span>
+        <button class="refresh-btn" id="refreshBtn"><span class="ic">↻</span> Refresh</button>
+      </div>
+
+      <div id="dashboardPage">
+        <section class="stats-row">
+          <div class="stat-card">
+            <div class="stat-left">
+              <div class="stat-icon teal">👥</div>
+              <div>
+                <div class="stat-label">Total Anak Magang</div>
+                <div class="stat-value" id="statTotal">0</div>
+              </div>
+            </div>
+            <div class="stat-delta" id="statTotalDelta">+0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-left">
+              <div class="stat-icon teal">👤</div>
+              <div>
+                <div class="stat-label">Magang Aktif</div>
+                <div class="stat-value" id="statAktif">0</div>
+              </div>
+            </div>
+            <div class="stat-delta" id="statAktifDelta">+0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-left">
+              <div class="stat-icon orange">⏳</div>
+              <div>
+                <div class="stat-label">Akan Mulai Magang</div>
+                <div class="stat-value" id="statAkanMulai">0</div>
+              </div>
+            </div>
+            <div class="stat-delta" id="statAkanMulaiDelta">+0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-left">
+              <div class="stat-icon purple">✅</div>
+              <div>
+                <div class="stat-label">Magang Selesai</div>
+                <div class="stat-value" id="statSelesai">0</div>
+              </div>
+            </div>
+            <div class="stat-delta" id="statSelesaiDelta">+0</div>
+          </div>
+        </section>
+
+        <section class="charts-row">
+          <div class="card">
+            <div class="card-title">Bidang Penempatan Magang</div>
+            <div class="chart-wrap chart-wrap-bar"><canvas id="divisiChart"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-title">Status Magang Saat Ini</div>
+            <div class="chart-wrap"><canvas id="statusDonut"></canvas></div>
+            <div class="legend-row" id="statusLegend"></div>
+          </div>
+        </section>
+
+        <section class="table-card">
+          <div class="table-head-row">
+            <div class="table-title">Daftar Anak Magang Terbaru</div>
+            <div class="filters">
+              <select id="filterPeriode"><option value="">Periode</option></select>
+              <select id="filterBidang"><option value="">Bidang Magang</option></select>
+              <select id="filterDurasi"><option value="">Durasi</option></select>
+              <select id="filterSertifikasi"><option value="">Status Sertifikasi</option></select>
+              <div class="multi-select" id="filterStatusWrap">
+                <button type="button" class="multi-select-btn" id="filterStatusBtn">
+                  <span id="filterStatusLabel">Status</span>
+                  <span class="chev">▾</span>
+                </button>
+                <div class="multi-select-menu" id="filterStatusMenu">
+                  <label class="ms-option"><input type="checkbox" value="Aktif"> Aktif</label>
+                  <label class="ms-option"><input type="checkbox" value="Akan Mulai"> Akan Mulai</label>
+                  <label class="ms-option"><input type="checkbox" value="Selesai"> Selesai</label>
+                </div>
+              </div>
+              <div class="search-box">
+                <span class="ic">🔎</span>
+                <input type="text" id="tableSearch" placeholder="Search">
+              </div>
+              <button type="button" id="exportCsvBtn" class="refresh-btn" title="Ekspor data yang sedang tampil (sesuai filter aktif) ke CSV">
+                <span class="ic">⬇</span> Ekspor CSV
+              </button>
+            </div>
+          </div>
+
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nama Lengkap</th>
+                  <th>Bidang Magang</th>
+                  <th>Universitas</th>
+                  <th>Periode</th>
+                  <th>Durasi</th>
+                  <th>Mentor</th>
+                  <th>Status</th>
+                  <th>Status Sertifikasi</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </div>
+          <div class="table-foot">
+            <span id="tableCount">Menampilkan 0 dari 0 anak magang</span>
+          </div>
+        </section>
+      </div>
+
+      <div id="dataAnakMagangPage" style="display:none;">
+        <section class="table-card" style="margin-bottom:18px;">
+          <div class="table-head-row" style="margin-bottom:6px;">
+            <div class="table-title">Jumlah Anak Magang per Universitas</div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <span id="uniSummary" style="font-size:12.5px; color:var(--text-muted); font-weight:600;"></span>
+              <button type="button" id="uniAllExportCsvBtn" class="refresh-btn" title="Ekspor semua anak magang (semua universitas) ke CSV">
+                <span class="ic">⬇</span> Ekspor CSV
+              </button>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 16px;">
+            Nama universitas yang sama (meski beda penulisan huruf besar/kecil atau spasi) otomatis digabung jadi satu box. Klik salah satu kartu untuk melihat data anak magangnya.
+          </p>
+          <div class="uni-grid" id="uniGrid"></div>
+        </section>
+
+        <section class="table-card" id="uniDetailCard" style="margin-bottom:18px; display:none;">
+          <div class="table-head-row">
+            <div class="uni-detail-title">
+              <div class="table-title" id="uniDetailTitle">Data Anak Magang</div>
+              <button type="button" class="uni-detail-clear" id="uniDetailClear">✕ Tampilkan semua universitas</button>
+            </div>
+            <button type="button" id="uniExportCsvBtn" class="refresh-btn" title="Ekspor data universitas yang sedang ditampilkan ke CSV">
+              <span class="ic">⬇</span> Ekspor CSV
+            </button>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nama Lengkap</th>
+                  <th>Bidang Magang</th>
+                  <th>Universitas</th>
+                  <th>Periode</th>
+                  <th>Durasi</th>
+                  <th>Mentor</th>
+                  <th>Status</th>
+                  <th>Status Sertifikasi</th>
+                </tr>
+              </thead>
+              <tbody id="uniDetailBody"></tbody>
+            </table>
+          </div>
+          <div class="table-foot">
+            <span id="uniDetailCount"></span>
+          </div>
+        </section>
+      </div>
+
+      <div id="rekapTahunPage" style="display:none;">
+        <section class="table-card" id="rekapTahunCard">
+          <div class="table-head-row" style="margin-bottom:6px;">
+            <div class="table-title">Rekap Per Tahun</div>
+            <button type="button" id="rekapExportCsvBtn" class="refresh-btn" title="Ekspor rekap tahun yang sedang aktif ke CSV">
+              <span class="ic">⬇</span> Ekspor CSV
+            </button>
+          </div>
+          <p class="rekap-note">
+            Anak magang dikelompokkan per tahun (berdasarkan tanggal Awal Pelaksanaan), lalu dirinci per bulan Januari–Desember.
+            Tahun baru otomatis muncul begitu ada data magang di tahun tersebut.
+          </p>
+          <div class="year-tabs" id="yearTabs"></div>
+          <div class="year-summary" id="yearSummary"></div>
+          <div class="month-grid" id="monthGrid"></div>
+        </section>
+      </div>
+
+      <div id="buktiMagangPage" style="display:none;">
+        <div id="buktiSetupBanner"></div>
+
+        <section class="table-card" style="margin-bottom:18px;">
+          <div class="table-head-row" style="margin-bottom:6px;">
+            <div class="table-title">Bukti Magang Mahasiswa</div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <span id="buktiSummary" style="font-size:12.5px; color:var(--text-muted); font-weight:600;"></span>
+              <button type="button" id="buktiExportCsvBtn" class="refresh-btn" title="Ekspor data yang sedang tampil ke CSV">
+                <span class="ic">⬇</span> Ekspor CSV
+              </button>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0;">
+            Daftar mahasiswa pendamping UMKM, dikelompokkan per kecamatan. Klik nama mahasiswa untuk melihat daftar usaha yang dinaunginya.
+          </p>
+        </section>
+
+        <div class="bukti-layout">
+          <section class="table-card bukti-list-card">
+            <div class="search-box" style="margin-bottom:12px;">
+              <span class="ic">🔎</span>
+              <input type="text" id="buktiSearch" placeholder="Cari kecamatan / nama mahasiswa">
+            </div>
+            <div class="bukti-kec-list" id="buktiKecList">
+              <div class="bukti-empty-note">Memuat data…</div>
+            </div>
+          </section>
+
+          <section class="table-card bukti-detail-card" id="buktiDetailCard">
+            <div class="bukti-detail-empty" id="buktiDetailEmpty">
+              <div class="bukti-detail-empty-ic">🧾</div>
+              <p>Pilih nama mahasiswa di daftar sebelah kiri untuk<br>melihat bukti usaha yang didampingi.</p>
+            </div>
+            <div id="buktiDetailContent" style="display:none;">
+              <div class="bukti-detail-header">
+                <div class="bukti-detail-avatar" id="buktiDetailAvatar"></div>
+                <div>
+                  <div class="bukti-detail-name" id="buktiDetailName"></div>
+                  <div class="bukti-detail-meta" id="buktiDetailMeta"></div>
+                </div>
+              </div>
+              <div class="bukti-usaha-scroll" id="buktiUsahaScroll"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="userGuidePage" style="display:none;">
+        <section class="table-card guide-card" id="userGuideSection">
+          <div class="table-head-row" style="margin-bottom:4px;">
+            <div class="table-title">📘 Panduan Penggunaan Aplikasi</div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 14px;">
+            Ringkasan cara memakai tiap bagian dashboard ini — dibuat supaya siapa pun, meski baru pertama kali pakai, tahu harus mulai
+            baca dari mana. Klik salah satu topik di bawah untuk membuka penjelasannya.
+          </p>
+
+          <div class="guide-quickstart">
+            <div class="guide-quickstart-title">🧭 Bingung mulai dari mana? Coba cek daftar ini:</div>
+            <ul>
+              <li>Mau lihat ringkasan &amp; statistik umum anak magang? → buka <b>Dashboard</b></li>
+              <li>Mau cari data anak magang per kampus/universitas? → buka <b>Data Anak Magang</b></li>
+              <li>Mau lihat rekap per tahun &amp; per bulan? → buka <b>Rekap Per Tahun</b></li>
+              <li>Mau lihat bukti usaha (UMKM) yang didampingi tiap mahasiswa? → buka <b>Bukti Magang Mahasiswa</b></li>
+              <li>Ada data yang salah/kurang dan mau diperbaiki? → baca topik <b>"Dari Mana Data Ini Berasal &amp; Cara Mengeditnya"</b> di bawah</li>
+            </ul>
+          </div>
+
+          <details class="guide-item" open>
+            <summary class="guide-summary"><span class="guide-summary-ic">📂</span> Dari Mana Data Ini Berasal &amp; Cara Mengeditnya</summary>
+            <div class="guide-content">
+              <p style="margin-top:0;">
+                Dashboard ini <b>tidak menyimpan data sendiri</b> — semua angka dan daftar yang tampil di sini diambil langsung (live) dari
+                Google Sheets. Kalau ada data yang salah, kurang, atau mau ditambah/diubah, <b>edit langsung di spreadsheet sumbernya</b>,
+                bukan di halaman dashboard ini. Perubahan akan otomatis muncul di dashboard dalam beberapa menit, atau langsung kelihatan
+                begitu klik tombol <b>↻ Refresh</b> di pojok kanan atas.
+              </p>
+              <p>Ada <b>3 sumber spreadsheet</b> yang dipakai dashboard ini:</p>
+              <div class="guide-source-card">
+                <div class="guide-source-title">1. Sheet Utama</div>
+                <div class="guide-source-desc">
+                  Dipakai oleh halaman <b>Dashboard</b>, <b>Data Anak Magang</b>, dan <b>Rekap Per Tahun</b> (untuk data mulai tahun 2026 dan seterusnya).
+                  Kolom pentingnya: Nama Lengkap, Bidang Penempatan Magang, Asal Universitas/Sekolah, Awal &amp; Akhir Pelaksanaan Magang, Durasi, Mentor.
+                </div>
+                <a class="guide-link" href="https://docs.google.com/spreadsheets/d/1zX30gW9bloWKnEip0oNNjMu2vhGoi0zq3gblaXnWBA8/edit#gid=823975893" target="_blank" rel="noopener">Buka Sheet Utama ↗</a>
+              </div>
+              <div class="guide-source-card">
+                <div class="guide-source-title">2. Sheet Rekap 2025</div>
+                <div class="guide-source-desc">
+                  Dipakai khusus untuk data tahun <b>2025</b> di halaman <b>Rekap Per Tahun</b> — karena data tahun tersebut tercatat di spreadsheet lama yang terpisah dari Sheet Utama.
+                </div>
+                <a class="guide-link" href="https://docs.google.com/spreadsheets/d/19ggV-kpWDAuY0P5ry_TeUhlfFf0yKcEW5Ql5f01I9W8/edit#gid=2028593341" target="_blank" rel="noopener">Buka Sheet Rekap 2025 ↗</a>
+              </div>
+              <div class="guide-source-card">
+                <div class="guide-source-title">3. Sheet Bukti Magang Mahasiswa</div>
+                <div class="guide-source-desc">
+                  Judul spreadsheet: <i>"DATA PENDAMPINGAN MBKM 2025"</i>. Dipakai oleh halaman <b>Bukti Magang Mahasiswa</b>.
+                  Kolom pentingnya: Kecamatan, No, Nama Mahasiswa, Nama Usaha, Alamat Tempat Usaha, Jenis Tempat Usaha.
+                </div>
+                <a class="guide-link" href="https://docs.google.com/spreadsheets/d/1rSEg5s6rBezJqZTG3CTXNDp_3I6stVf1bhmpN97LK00/edit#gid=827019176" target="_blank" rel="noopener">Buka Sheet Bukti Magang ↗</a>
+              </div>
+              <p style="margin-bottom:0;">
+                Supaya dashboard bisa membaca datanya, ketiga spreadsheet di atas harus dalam kondisi share <b>"Anyone with the link"</b>
+                (minimal akses Viewer). Untuk bisa <b>mengedit</b> isinya, kamu perlu akses <b>Editor</b> ke spreadsheet tersebut — hubungi
+                admin/penanggung jawab data kalau belum punya akses. Saat mengedit, usahakan jangan mengubah atau menghapus baris judul
+                kolom (header), supaya dashboard tetap bisa membaca datanya dengan benar.
+              </p>
+            </div>
+          </details>
+
+          <details class="guide-item">
+            <summary class="guide-summary"><span class="guide-summary-ic">▦</span> Dashboard</summary>
+            <div class="guide-content">
+              Menampilkan ringkasan jumlah anak magang (total, aktif, akan mulai, selesai), grafik bidang penempatan dan status magang,
+              serta tabel <b>Daftar Anak Magang Terbaru</b>. Gunakan kolom filter (Periode, Bidang Magang, Durasi, Status, Status Sertifikasi) dan kotak pencarian
+              untuk mempersempit data, lalu klik <b>⬇ Ekspor CSV</b> untuk mengunduh data sesuai filter yang sedang aktif.
+              <div class="guide-source-note">📂 Sumber data: <b>Sheet Utama</b> — lihat link &amp; cara edit di topik "Dari Mana Data Ini Berasal &amp; Cara Mengeditnya" di atas.</div>
+            </div>
+          </details>
+
+          <details class="guide-item">
+            <summary class="guide-summary"><span class="guide-summary-ic">🗂</span> Data Anak Magang</summary>
+            <div class="guide-content">
+              Menampilkan jumlah anak magang per universitas dalam bentuk kartu. Klik salah satu kartu universitas untuk membuka tabel detail
+              anak magang dari universitas tersebut (bidang, periode, durasi, mentor, status). Tabel detail bisa di-scroll agar halaman tidak
+              memanjang. Tombol <b>✕ Tampilkan semua universitas</b> menutup detail, dan <b>⬇ Ekspor CSV</b> tersedia baik untuk seluruh data
+              maupun untuk data satu universitas yang sedang dibuka.
+              <div class="guide-source-note">📂 Sumber data: <b>Sheet Utama</b> — lihat link &amp; cara edit di topik "Dari Mana Data Ini Berasal &amp; Cara Mengeditnya" di atas.</div>
+            </div>
+          </details>
+
+          <details class="guide-item">
+            <summary class="guide-summary"><span class="guide-summary-ic">📅</span> Rekap Per Tahun</summary>
+            <div class="guide-content">
+              Data dikelompokkan otomatis per tahun (berdasarkan tanggal Awal Pelaksanaan), lalu dirinci per bulan Januari–Desember.
+              Klik tab tahun untuk berpindah tahun, lalu klik salah satu kartu bulan untuk membuka/menutup daftar nama anak magang yang mulai
+              di bulan itu. Klik <b>⬇ Ekspor CSV</b> untuk mengunduh rekap dari tahun yang sedang aktif.
+              <div class="guide-source-note">📂 Sumber data: <b>Sheet Utama</b> (tahun 2026 dst.) dan <b>Sheet Rekap 2025</b> (khusus tahun 2025) — lihat link &amp; cara edit di topik "Dari Mana Data Ini Berasal &amp; Cara Mengeditnya" di atas.</div>
+            </div>
+          </details>
+
+          <details class="guide-item">
+            <summary class="guide-summary"><span class="guide-summary-ic">🧾</span> Bukti Magang Mahasiswa</summary>
+            <div class="guide-content">
+              Daftar mahasiswa pendamping UMKM, dikelompokkan per kecamatan. Klik nama kecamatan di panel kiri untuk membuka/menutup daftar
+              mahasiswanya, lalu klik nama mahasiswa untuk melihat daftar usaha (UMKM) yang didampingi di panel kanan — daftar usaha ini bisa
+              di-scroll kalau jumlahnya banyak. Gunakan kotak pencarian untuk mencari kecamatan/nama mahasiswa dengan cepat, dan
+              <b>⬇ Ekspor CSV</b> untuk mengunduh data yang sedang tampil (mengikuti pencarian yang aktif).
+              <div class="guide-source-note">📂 Sumber data: <b>Sheet Bukti Magang Mahasiswa ("DATA PENDAMPINGAN MBKM 2025")</b> — lihat link &amp; cara edit di topik "Dari Mana Data Ini Berasal &amp; Cara Mengeditnya" di atas.</div>
+            </div>
+          </details>
+
+          <details class="guide-item">
+            <summary class="guide-summary"><span class="guide-summary-ic">↻</span> Sinkronisasi &amp; Refresh Data</summary>
+            <div class="guide-content">
+              Semua data diambil langsung dari Google Sheets dan disinkronkan otomatis setiap beberapa menit. Klik tombol
+              <b>↻ Refresh</b> di bagian atas halaman kapan saja untuk menarik data terbaru secara manual tanpa perlu memuat ulang browser.
+              Kalau dashboard menampilkan peringatan <b>"data contoh"</b>, itu artinya salah satu spreadsheet sumber belum bisa diakses —
+              cek kembali pengaturan share-nya (lihat topik "Dari Mana Data Ini Berasal &amp; Cara Mengeditnya" di atas), lalu klik Refresh lagi.
+            </div>
+          </details>
+        </section>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+const CONFIG = {
+  SHEET_ID: '1zX30gW9bloWKnEip0oNNjMu2vhGoi0zq3gblaXnWBA8',
+  GID: '823975893',
+  AUTO_REFRESH_MINUTES: 5,
+  PERIODE_YEAR_START: 2026,
+  PERIODE_YEAR_END: 2028,
+
+  COLUMN_MAP: {
+    nama: 'Nama Lengkap',
+    divisi: 'Bidang Penempatan Magang',
+    divisiFallback: 'Fakultas/ Jurusan',
+    universitas: 'Asal Universitas/ Sekolah',
+    periodeAwal: 'Awal Pelaksanaan Magang/Penelitian',
+    periodeAkhir: 'Akhir Pelaksanaan Magang/Penelitian',
+    durasi: 'Durasi Magang/Penelitian',
+    mentor: 'Mentor',
+    status: '',
+    sertifikasi: 'Status Sertifikat',
+  },
+
+  // Dipakai khusus oleh halaman "Rekap Per Tahun": daftar sheet TAMBAHAN untuk tahun
+  // yang datanya TIDAK ada di sheet utama di atas (mis. 2025 ada di spreadsheet lama yang
+  // terpisah). Tahun-tahun yang datanya nyambung ke sheet utama (2026, 2027, dst.) tidak
+  // perlu didaftarkan di sini — otomatis kebaca begitu ada barisnya di sheet utama.
+  // Tinggal tambah satu blok baru di array ini kalau nanti ada tahun lain yang sheet-nya
+  // juga terpisah.
+  SECONDARY_YEAR_SHEETS: [
+    {
+      label: '2025',
+      SHEET_ID: '19ggV-kpWDAuY0P5ry_TeUhlfFf0yKcEW5Ql5f01I9W8',
+      GID: '2028593341',
+      COLUMN_MAP: {
+        nama: 'Nama Lengkap',
+        universitas: 'Asal Universitas/ Sekolah',
+        periodeAwal: 'Awal Pelaksanaan Magang/Penelitian',
+      },
+    },
+  ],
+
+  STATUS_COLOR_API_KEY: '',
+  STATUS_COLOR_COLUMN: 'A',
+  STATUS_COLOR_MAP: {
+    selesai: { r: 255, g: 0,   b: 0   },
+    aktif:   { r: 164, g: 194, b: 244 },
+  },
+  STATUS_COLOR_TOLERANCE: 60,
+};
+
+// Sumber data untuk halaman "Bukti Magang Mahasiswa" — spreadsheet TERPISAH dari CONFIG di atas.
+// Sheet ini pakai 2 baris header gabungan (judul kelompok + nama kolom per baris kedua), jadi
+// kolom dipetakan lewat POSISI kolom tetap (bukan cocokkan nama header) supaya tidak mudah salah baca.
+const CONFIG_BUKTI = {
+  SHEET_ID: '1rSEg5s6rBezJqZTG3CTXNDp_3I6stVf1bhmpN97LK00',
+  GID: '827019176',
+  // A=Kecamatan, D=No, E=Nama mahasiswa, F=Nama usaha, G=Alamat tempat usaha, H=Jenis tempat usaha
+  COLS: { kecamatan: 0, no: 3, nama: 4, usaha: 5, alamat: 6, jenis: 7 },
+};
+
+function buildDemoData(){
+  const firstNames = ['Budi','Siti','Andi','Anya','Dewi','Rizky','Putri','Fajar','Rina','Yoga','Dian','Agus','Nadia','Bayu','Intan','Wahyu','Hendra','Sari','Fikri','Rani','Doni','Maya','Arya','Tania','Eko','Citra','Bagas','Wulan','Rian','Nia','Ilham','Vina','Adit','Kirana','Dimas'];
+  const lastNames = ['Santoso','Rahma','Pratama','Famina','Wulandari','Saputra','Anggraini','Nugroho','Kusuma','Permata','Setiawan','Hidayat','Ramadhan','Utami','Wijaya'];
+  const universitas = ['Universitas Indonesia','Institut Teknologi Bandung','Universitas Gadjah Mada','Universitas Airlangga','Universitas Brawijaya','Universitas Padjadjaran','Institut Teknologi Sepuluh Nopember','Universitas Diponegoro'];
+  const mentors = ['Sarah Dewi','Siti Rahma','Andi Pratama','Anya Ampir','Budi Santoso','Rian Kurnia','Dewi Lestari'];
+  const durasiPool = ['4 Bulan','4 Bulan','4 Bulan','2 Bulan','2 Bulan','1 Bulan','3 Bulan'];
+  const batches = [
+    {label:'Batch Jan 2026', mulai:'02 Jan 2026', selesai:'30 Jun 2026'},
+    {label:'Batch Apr 2026', mulai:'01 Apr 2026', selesai:'30 Sep 2026'},
+    {label:'Batch Jul 2026', mulai:'20 Jul 2026', selesai:'20 Jan 2027'},
+  ];
+  const divisiPlan = [
+    {name:'IT/Dev', active:5, upcoming:2, done:2},
+    {name:'Marketing', active:5, upcoming:1, done:2},
+    {name:'Design', active:5, upcoming:1, done:1},
+    {name:'Content', active:4, upcoming:1, done:1},
+    {name:'HR', active:4, upcoming:0, done:1},
+  ];
+
+  const pick = (arr) => arr[(arr._i = ((arr._i||0)+1)) % arr.length];
+
+  let rows = [];
+  divisiPlan.forEach(div=>{
+    for(let i=0;i<div.active;i++){
+      rows.push({ nama: pick(firstNames) + ' ' + pick(lastNames), divisi: div.name, universitas: pick(universitas), batch: pick(batches), durasi: pick(durasiPool), mentor: pick(mentors), status: 'Aktif' });
+    }
+    for(let i=0;i<(div.upcoming||0);i++){
+      rows.push({ nama: pick(firstNames) + ' ' + pick(lastNames), divisi: div.name, universitas: pick(universitas), batch: pick(batches), durasi: pick(durasiPool), mentor: pick(mentors), status: 'Akan Mulai' });
+    }
+    for(let i=0;i<div.done;i++){
+      rows.push({ nama: pick(firstNames) + ' ' + pick(lastNames), divisi: div.name, universitas: pick(universitas), batch: pick(batches), durasi: pick(durasiPool), mentor: pick(mentors), status: 'Selesai' });
+    }
+  });
+
+  rows = rows
+    .map((r, i) => ({ r, k: (i * 53 + 7) % rows.length }))
+    .sort((a,b) => a.k - b.k)
+    .map(x => x.r);
+
+  return rows.map((r, i) => ({
+    nama: r.nama,
+    divisi: r.divisi,
+    bidangPenempatan: r.divisi,
+    universitas: r.universitas,
+    periode: r.batch.mulai + ' - ' + r.batch.selesai,
+    periodeLabel: monthYearLabel(r.batch.mulai) || r.batch.label,
+    durasi: r.durasi,
+    mentor: r.mentor,
+    status: r.status,
+    sertifikasi: r.status === 'Selesai' && i % 3 !== 0 ? 'Sudah Terbit' : 'Belum Terbit',
+  }));
+}
+
+let allData = [];
+let usingDemoData = true;
+let lastSyncDate = null;
+let divisiChartInstance = null;
+let donutChartInstance = null;
+
+const filterState = { bidang:'', status:[], periode:'', durasi:'', sertifikasi:'', search:'' };
+
+function fetchSheetViaJsonp(sheetId, gid){
+  return new Promise((resolve, reject) => {
+    const callbackName = 'gvizCallback_' + Date.now() + '_' + Math.floor(Math.random()*10000);
+    const timeoutId = setTimeout(() => {
+      cleanup();
+      reject(new Error('Waktu habis mengambil data — cek SHEET_ID / nama tab, atau koneksi internet'));
+    }, 9000);
+
+    function cleanup(){
+      clearTimeout(timeoutId);
+      delete window[callbackName];
+      if(script.parentNode) script.parentNode.removeChild(script);
+    }
+
+    window[callbackName] = function(json){
+      cleanup();
+      resolve(json);
+    };
+
+    const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq` +
+      `?tqx=out:json;responseHandler:${callbackName}` +
+      `&gid=${encodeURIComponent(gid)}` +
+      `&headers=1`;
+
+    const script = document.createElement('script');
+    script.src = url;
+    script.onerror = () => { cleanup(); reject(new Error('Gagal memuat sheet — pastikan SHEET_ID & GID benar dan sharing sudah "Anyone with the link"')); };
+    document.body.appendChild(script);
+  });
+}
+
+function parseGvizTable(json){
+  if(!json || !json.table) throw new Error('Format respons tidak dikenali — cek SHEET_ID / GID');
+  const headers = json.table.cols.map(c => (c.label || '').trim());
+  const rows = json.table.rows.map(r => (r.c || []).map(cell => {
+    if(!cell) return '';
+    return (cell.f !== undefined && cell.f !== null) ? String(cell.f) : (cell.v ?? '');
+  }));
+  return { headers, rows };
+}
+
+const MONTHS_ID = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
+const MONTHS_ID_FULL = ['januari','februari','maret','april','mei','juni','juli','agustus','september','oktober','november','desember'];
+
+const VALID_YEAR_MIN = 2020;
+const VALID_YEAR_MAX = 2035;
+
+function parseFlexibleDate(str){
+  const s = String(str || '').trim();
+  if(!s) return null;
+
+  let d = null;
+
+  let m = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  if(m) d = new Date(parseInt(m[3]), parseInt(m[2]) - 1, parseInt(m[1]));
+
+  if(!d){
+    m = s.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+    if(m) d = new Date(parseInt(m[3]), parseInt(m[2]) - 1, parseInt(m[1]));
+  }
+
+  if(!d){
+    m = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    if(m) d = new Date(parseInt(m[1]), parseInt(m[2]) - 1, parseInt(m[3]));
+  }
+
+  if(!d){
+    m = s.toLowerCase().match(/^(\d{1,2})\s+([a-zé]+)\s+(\d{4})/);
+    if(m){
+      const monthIdx = MONTHS_ID_FULL.findIndex(full => full.startsWith(m[2]) || m[2].startsWith(full.slice(0,3)));
+      if(monthIdx > -1) d = new Date(parseInt(m[3]), monthIdx, parseInt(m[1]));
+    }
+  }
+
+  if(!d || isNaN(d.getTime())) return null;
+
+  const y = d.getFullYear();
+  if(y < VALID_YEAR_MIN || y > VALID_YEAR_MAX) return null;
+
+  return d;
+}
+
+function computeStatusFromDates(startDateStr, endDateStr){
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  const end = parseFlexibleDate(endDateStr);
+  if(end){
+    end.setHours(0,0,0,0);
+    if(end < today) return 'Selesai';
+  }
+
+  const start = parseFlexibleDate(startDateStr);
+  if(start){
+    start.setHours(0,0,0,0);
+    if(start > today) return 'Akan Mulai';
+  }
+
+  return 'Aktif';
+}
+
+function monthYearLabel(dateStr){
+  const d = parseFlexibleDate(dateStr);
+  return d ? `${MONTHS_ID[d.getMonth()]} ${d.getFullYear()}` : '';
+}
+
+function normalizeDurasi(raw){
+  const s = String(raw || '').trim();
+  if(!s) return '';
+  const m = s.match(/^(\d+([.,]\d+)?)\s*(bulan|minggu|hari|tahun)$/i);
+  if(!m) return s;
+  const satuan = m[3].toLowerCase();
+  return `${m[1]} ${satuan.charAt(0).toUpperCase()}${satuan.slice(1)}`;
+}
+
+async function fetchJson(url){
+  const res = await fetch(url);
+  if(!res.ok){
+    let detail = '';
+    try{ const j = await res.json(); detail = j?.error?.message ? ' — ' + j.error.message : ''; }catch(e){}
+    throw new Error(`Google Sheets API menolak permintaan (HTTP ${res.status})${detail}`);
+  }
+  return res.json();
+}
+
+async function resolveSheetTitleFromGid(sheetId, gid, apiKey){
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${encodeURIComponent(sheetId)}` +
+    `?key=${encodeURIComponent(apiKey)}&fields=${encodeURIComponent('sheets.properties(sheetId,title)')}`;
+  const json = await fetchJson(url);
+  const targetGid = Number(gid) || 0;
+  const match = (json.sheets || []).find(s => s.properties && s.properties.sheetId === targetGid);
+  if(!match) throw new Error(`Tab dengan GID "${gid}" tidak ditemukan lewat Sheets API — cek CONFIG.GID`);
+  return match.properties.title;
+}
+
+function rgbFloatToByte(v){
+  return Math.round(Math.max(0, Math.min(1, v ?? 0)) * 255);
+}
+
+async function fetchStatusRowColors(sheetId, gid, apiKey, columnLetter, rowCount){
+  if(rowCount <= 0) return [];
+  const title = await resolveSheetTitleFromGid(sheetId, gid, apiKey);
+  const safeTitle = title.replace(/'/g, "''");
+  const range = `'${safeTitle}'!${columnLetter}2:${columnLetter}${rowCount + 1}`;
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${encodeURIComponent(sheetId)}` +
+    `?key=${encodeURIComponent(apiKey)}&ranges=${encodeURIComponent(range)}` +
+    `&fields=${encodeURIComponent('sheets.data.rowData.values.effectiveFormat.backgroundColor')}`;
+  const json = await fetchJson(url);
+  const rowData = json.sheets?.[0]?.data?.[0]?.rowData || [];
+  const out = [];
+  for(let i=0;i<rowCount;i++){
+    const cell = rowData[i]?.values?.[0];
+    const bg = cell?.effectiveFormat?.backgroundColor;
+    if(!bg){ out.push(null); continue; }
+    out.push({ r: rgbFloatToByte(bg.red), g: rgbFloatToByte(bg.green), b: rgbFloatToByte(bg.blue) });
+  }
+  return out;
+}
+
+function classifyStatusColor(rgb, colorMap, tolerance){
+  const dist = (a, b) => Math.sqrt((a.r-b.r)**2 + (a.g-b.g)**2 + (a.b-b.b)**2);
+  if(!rgb) return 'Akan Mulai';
+  if(dist(rgb, {r:255,g:255,b:255}) < 12) return 'Akan Mulai';
+
+  const dSelesai = dist(rgb, colorMap.selesai);
+  const dAktif = dist(rgb, colorMap.aktif);
+
+  if(dSelesai <= tolerance && dSelesai <= dAktif) return 'Selesai';
+  if(dAktif <= tolerance && dAktif < dSelesai) return 'Aktif';
+  return 'Akan Mulai';
+}
+
+async function loadData(){
+  const refreshBtn = document.getElementById('refreshBtn');
+  refreshBtn.classList.add('spinning');
+
+  const rawId = (CONFIG.SHEET_ID || '').trim();
+  const isConfigured = rawId !== '';
+  const map = CONFIG.COLUMN_MAP || {};
+
+  if(isConfigured){
+    try{
+      if(/^\d+$/.test(rawId) || rawId.length < 20){
+        throw new Error(`SHEET_ID "${rawId}" sepertinya salah — itu kependekan / cuma angka, kemungkinan besar itu GID, bukan SHEET_ID. SHEET_ID ada di URL sheet di antara "/d/" dan "/edit", biasanya 40+ karakter campuran huruf & angka.`);
+      }
+
+      const json = await fetchSheetViaJsonp(rawId, CONFIG.GID || '0');
+      const { headers, rows: rawRows } = parseGvizTable(json);
+
+      const normalize = s => String(s || '').trim().toLowerCase();
+      const normalizedHeaders = headers.map(normalize);
+      const findCol = target => target ? normalizedHeaders.indexOf(normalize(target)) : -1;
+
+      const idx = {
+        nama: findCol(map.nama),
+        divisi: findCol(map.divisi),
+        divisiFallback: findCol(map.divisiFallback),
+        universitas: findCol(map.universitas),
+        periodeAwal: findCol(map.periodeAwal),
+        periodeAkhir: findCol(map.periodeAkhir),
+        mentor: findCol(map.mentor),
+        status: findCol(map.status),
+        durasi: findCol(map.durasi),
+        sertifikasi: findCol(map.sertifikasi),
+      };
+      if(idx.nama === -1){
+        const found = headers.filter(h => h && h.trim() !== '').join(', ') || '(tidak ada header terbaca sama sekali)';
+        throw new Error(`Kolom "${map.nama}" tidak ditemukan. Header yang berhasil terbaca dari sheet: ${found}. Cocokkan COLUMN_MAP.nama dengan salah satu header di atas.`);
+      }
+
+      const BLANK_LIKE = new Set(['', '-', '0']);
+
+      const rowsAll = rawRows.map(row => {
+        const divisiUtama = String(row[idx.divisi] ?? '').trim();
+        const divisiCadangan = idx.divisiFallback > -1 ? String(row[idx.divisiFallback] ?? '').trim() : '';
+        const divisi = !BLANK_LIKE.has(divisiUtama) ? divisiUtama : (!BLANK_LIKE.has(divisiCadangan) ? divisiCadangan : 'Belum Ditentukan');
+
+        const periodeAwal = idx.periodeAwal > -1 ? String(row[idx.periodeAwal] ?? '').trim() : '';
+        const periodeAkhir = idx.periodeAkhir > -1 ? String(row[idx.periodeAkhir] ?? '').trim() : '';
+        const periode = [periodeAwal, periodeAkhir].filter(Boolean).join(' - ');
+
+        const durasiRaw = idx.durasi > -1 ? String(row[idx.durasi] ?? '').trim() : '';
+        const durasi = !BLANK_LIKE.has(durasiRaw) ? normalizeDurasi(durasiRaw) : '';
+
+        const status = idx.status > -1 && row[idx.status]
+          ? String(row[idx.status]).trim()
+          : computeStatusFromDates(periodeAwal, periodeAkhir);
+
+        const sertifikasiRaw = idx.sertifikasi > -1 ? String(row[idx.sertifikasi] ?? '').trim() : '';
+        const sertifikasi = !BLANK_LIKE.has(sertifikasiRaw)
+          ? (sertifikasiRaw.toLowerCase() === 'ok' ? 'Sudah Terbit' : sertifikasiRaw)
+          : 'Belum Terbit';
+
+        return {
+          nama: String(row[idx.nama] ?? '').trim(),
+          divisi,
+          bidangPenempatan: !BLANK_LIKE.has(divisiUtama) ? divisiUtama : '',
+          universitas: idx.universitas > -1 ? String(row[idx.universitas] ?? '').trim() : '',
+          periode: periode || '-',
+          periodeLabel: monthYearLabel(periodeAwal) || periode || '-',
+          periodeAwalRaw: periodeAwal,
+          durasi: durasi || '-',
+          mentor: idx.mentor > -1 ? (String(row[idx.mentor] ?? '').trim() || '-') : '-',
+          status,
+          sertifikasi,
+        };
+      });
+
+      const colorApiKey = (CONFIG.STATUS_COLOR_API_KEY || '').trim();
+      if(colorApiKey){
+        try{
+          const rowColors = await fetchStatusRowColors(
+            rawId, CONFIG.GID || '0', colorApiKey,
+            CONFIG.STATUS_COLOR_COLUMN || 'A', rawRows.length
+          );
+          const calibration = new Map();
+          rowsAll.forEach((r, i) => {
+            const rgb = rowColors[i] || null;
+            const classified = classifyStatusColor(rgb, CONFIG.STATUS_COLOR_MAP, CONFIG.STATUS_COLOR_TOLERANCE ?? 60);
+            r.status = classified;
+            const key = rgb ? `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` : '(tanpa warna / putih)';
+            if(!calibration.has(key)) calibration.set(key, { warna: key, 'diklasifikasi sbg': classified, jumlah_baris: 0 });
+            calibration.get(key).jumlah_baris++;
+          });
+          console.info('[InternDinkop] Status diambil dari warna baris (kolom ' + (CONFIG.STATUS_COLOR_COLUMN || 'A') + '). Kalau ada yang salah kelompok, cocokkan RGB di tabel ini ke CONFIG.STATUS_COLOR_MAP:');
+          console.table([...calibration.values()]);
+        }catch(err){
+          console.warn('Gagal mengambil warna baris (status-dari-warna dilewati, pakai status dari tanggal sbg cadangan):', err);
+        }
+      }
+
+      const rows = rowsAll.filter(r => r.nama);
+
+      if(rows.length === 0) throw new Error('Tidak ada baris data di bawah header');
+
+      allData = rows;
+      usingDemoData = false;
+      showSetupBanner(false);
+    }catch(err){
+      console.warn('Gagal mengambil data dari Google Sheets, memakai data demo:', err);
+      allData = buildDemoData();
+      usingDemoData = true;
+      showSetupBanner(true, err.message);
+    }
+  }else{
+    allData = buildDemoData();
+    usingDemoData = true;
+    showSetupBanner(true, null);
+  }
+
+  allData.forEach(r => {
+    const match = resolveAlias(r.bidangPenempatan, BIDANG_ALIASES);
+    r.bidangKategori = match ? match.canonical : 'Lainnya';
+  });
+
+  lastSyncDate = new Date();
+  populateFilters(allData);
+  renderAll();
+  Promise.all([loadRekapTahunData(), loadBuktiMagangData()]).then(checkForDataChanges);
+
+  setTimeout(()=> refreshBtn.classList.remove('spinning'), 400);
+  updateSyncText();
+}
+
+function showSetupBanner(show, errorMessage){
+  const el = document.getElementById('setupBanner');
+  if(!show){ el.innerHTML = ''; return; }
+  el.innerHTML = `
+    <div class="setup-banner">
+      <span>ℹ️</span>
+      <span>
+        Dashboard sedang menampilkan <b>data contoh</b>${errorMessage ? ' (' + escapeHtml(errorMessage) + ')' : ''}.
+        Untuk menyambungkan Google Sheets kamu sendiri, isi <code>CONFIG.SHEET_ID</code>,
+        <code>CONFIG.GID</code>, dan <code>CONFIG.COLUMN_MAP</code> di bagian atas file
+        <code>index.html</code>.
+      </span>
+    </div>`;
+}
+
+function buildFixedPeriodeOptions(){
+  const startYear = CONFIG.PERIODE_YEAR_START || new Date().getFullYear();
+  const endYear = CONFIG.PERIODE_YEAR_END || startYear;
+  const opts = [];
+  for(let y = startYear; y <= endYear; y++){
+    MONTHS_ID.forEach(m => opts.push(`${m} ${y}`));
+  }
+  return opts;
+}
+
+const DURASI_BASE_OPTIONS = ['1 Bulan', '2 Bulan', '3 Bulan', '4 Bulan'];
+function buildDurasiOptions(data){
+  const extra = [...new Set(data.map(r => r.durasi))]
+    .filter(v => v && v !== '-' && !DURASI_BASE_OPTIONS.includes(v))
+    .sort();
+  return DURASI_BASE_OPTIONS.concat(extra);
+}
+
+function buildBidangFilterOptions(){
+  return BIDANG_ALIASES.map(a => a.canonical).concat(['Lainnya']);
+}
+
+function populateFilters(data){
+  fillSelect('filterBidang', buildBidangFilterOptions(), 'Bidang Magang');
+  fillSelect('filterPeriode', buildFixedPeriodeOptions(), 'Periode');
+  fillSelect('filterDurasi', buildDurasiOptions(data), 'Durasi');
+  fillSelect('filterSertifikasi', buildSertifikasiOptions(data), 'Status Sertifikasi');
+}
+const SERTIFIKASI_BASE_OPTIONS = ['Sudah Terbit', 'Belum Terbit'];
+function buildSertifikasiOptions(data){
+  const extra = [...new Set(data.map(r => r.sertifikasi))]
+    .filter(v => v && !SERTIFIKASI_BASE_OPTIONS.includes(v))
+    .sort();
+  return SERTIFIKASI_BASE_OPTIONS.concat(extra);
+}
+function fillSelect(id, values, placeholder){
+  const sel = document.getElementById(id);
+  const current = sel.value;
+  sel.innerHTML = `<option value="">${placeholder}</option>` + values.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('');
+  if(values.includes(current)) sel.value = current;
+}
+function getFilteredData(){
+  return allData.filter(r=>{
+    if(filterState.bidang && r.bidangKategori !== filterState.bidang) return false;
+    if(filterState.status.length && !filterState.status.includes(r.status)) return false;
+    if(filterState.periode && r.periodeLabel !== filterState.periode) return false;
+    if(filterState.durasi && r.durasi !== filterState.durasi) return false;
+    if(filterState.sertifikasi && r.sertifikasi !== filterState.sertifikasi) return false;
+    if(filterState.search){
+      const q = filterState.search.toLowerCase();
+      const hay = (r.nama + ' ' + r.mentor + ' ' + r.universitas).toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function renderAll(){
+  try{ renderStats(); }catch(e){ console.error('renderStats gagal:', e); }
+  try{ renderTable(); }catch(e){ console.error('renderTable gagal:', e); }
+  try{ renderUniversityBoxes(); }catch(e){ console.error('renderUniversityBoxes gagal:', e); }
+  renderChartsWhenReady();
+}
+
+function renderChartsWhenReady(attempt = 0){
+  if(typeof Chart !== 'undefined'){
+    try{ renderCharts(); }catch(e){ console.error('renderCharts gagal:', e); }
+    return;
+  }
+  if(attempt < 40){
+    setTimeout(() => renderChartsWhenReady(attempt + 1), 100);
+  }else{
+    console.error('Chart.js tidak termuat — grafik dilewati (cek koneksi / CDN).');
+  }
+}
+
+function renderStats(){
+  const total = allData.length;
+  const akanMulai = allData.filter(r => r.status === 'Akan Mulai').length;
+  const aktif = allData.filter(r => r.status === 'Aktif').length;
+  const selesai = allData.filter(r => r.status === 'Selesai').length;
+
+  document.getElementById('statTotal').textContent = total;
+  document.getElementById('statAktif').textContent = aktif;
+  document.getElementById('statAkanMulai').textContent = akanMulai;
+  document.getElementById('statSelesai').textContent = selesai;
+
+  document.getElementById('statTotalDelta').textContent = '+' + Math.max(1, Math.round(total * 0.14));
+  document.getElementById('statAktifDelta').textContent = '+' + Math.max(1, Math.round(aktif * 0.11));
+  document.getElementById('statAkanMulaiDelta').textContent = '+' + Math.max(0, Math.round(akanMulai * 0.3));
+  document.getElementById('statSelesaiDelta').textContent = '+' + Math.max(1, Math.round(selesai * 0.08));
+}
+
+const DIVISI_COLORS = ['#0f9488','#3b82c4','#8b5cf6','#f2994a','#e0507a','#2f9e6e','#c77b2b','#4a7bd0','#d0574a','#7a8b2b'];
+const STATUS_ORDER  = ['Aktif','Akan Mulai','Selesai'];
+const STATUS_COLORS = { 'Aktif':'#0f9488', 'Akan Mulai':'#6b7fa3', 'Selesai':'#f2994a' };
+
+function groupByNormalized(values, emptyLabel){
+  const groups = new Map();
+  values.forEach(v => {
+    const raw = String(v || '').trim().replace(/\s+/g, ' ');
+    const key = raw.toLowerCase() || '__empty__';
+    if(!groups.has(key)) groups.set(key, { count: 0, labels: new Map() });
+    const g = groups.get(key);
+    g.count++;
+    const disp = raw || (emptyLabel || 'Belum Ditentukan');
+    g.labels.set(disp, (g.labels.get(disp) || 0) + 1);
+  });
+  const out = [];
+  for(const g of groups.values()){
+    let best = null, bestN = -1;
+    for(const [lab, n] of g.labels){ if(n > bestN){ bestN = n; best = lab; } }
+    out.push({ label: best, count: g.count });
+  }
+  out.sort((a, b) => b.count - a.count);
+  return out;
+}
+
+const UNIVERSITY_ALIASES = [
+  { canonical: 'Universitas 17 Agustus 1945 Surabaya',          abbr: 'UNTAG',    signatures: [['17','agustus']] },
+  { canonical: 'Universitas Islam Negeri Sunan Ampel Surabaya',  abbr: 'UINSA',    signatures: [['sunan','ampel']] },
+  { canonical: 'Institut Teknologi Sepuluh Nopember',            abbr: 'ITS',      signatures: [['sepuluh','nopember']] },
+  { canonical: 'UPN "Veteran" Jawa Timur',                       abbr: 'UPN',      signatures: [['veteran']] },
+  { canonical: 'Universitas Negeri Surabaya',                    abbr: 'UNESA',    signatures: [['unesa'], ['negeri','surabaya']] },
+  { canonical: 'Universitas Airlangga',                          abbr: 'UNAIR',    signatures: [['airlangga']] },
+  { canonical: 'Universitas Hang Tuah',                          abbr: 'UHT',      signatures: [['hang','tuah']] },
+  { canonical: 'Universitas Adibuana Surabaya',                  abbr: 'ADIBUANA', signatures: [['adibuana']] },
+  { canonical: 'Universitas Hayam Wuruk Perbanas Surabaya',      abbr: 'PERBANAS', signatures: [['perbanas']] },
+];
+
+function normalizeForMatch(raw){
+  return String(raw || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function resolveUniversity(raw){
+  const compact = normalizeForMatch(raw).replace(/\s+/g, '');
+  if(!compact) return null;
+  for(const uni of UNIVERSITY_ALIASES){
+    const cocok = uni.signatures.some(sig => sig.every(kw => compact.includes(kw)));
+    if(cocok) return uni;
+  }
+  return null;
+}
+
+function groupUniversities(values, emptyLabel){
+  const groups = new Map();
+  values.forEach(v => {
+    const raw = String(v || '').trim().replace(/\s+/g, ' ');
+    const uni = resolveUniversity(raw);
+    const key = uni ? ('#' + uni.canonical.toLowerCase()) : (raw.toLowerCase() || '__empty__');
+    if(!groups.has(key)) groups.set(key, { count: 0, labels: new Map(), uni });
+    const g = groups.get(key);
+    g.count++;
+    const disp = uni ? uni.canonical : (raw || (emptyLabel || 'Belum Ditentukan'));
+    g.labels.set(disp, (g.labels.get(disp) || 0) + 1);
+  });
+  const out = [];
+  for(const g of groups.values()){
+    let best = null, bestN = -1;
+    for(const [lab, n] of g.labels){ if(n > bestN){ bestN = n; best = lab; } }
+    out.push({ label: best, count: g.count, abbr: g.uni ? g.uni.abbr : null });
+  }
+  out.sort((a, b) => b.count - a.count);
+  return out;
+}
+
+const BIDANG_ALIASES = [
+  { canonical: 'Sekretariat',                   signatures: [['sekretariat']] },
+  { canonical: 'Koperasi',                       signatures: [['koperasi']] },
+  { canonical: 'Pemberdayaan Usaha Mikro',       signatures: [['pemberdayaan','usaha'], ['usaha','mikro'], ['usaha','micro'], ['umkm']] },
+  { canonical: 'Distribusi Perdagangan',         signatures: [['distribus']] },
+  { canonical: 'Pembinaan Usaha Perdagangan',    signatures: [['pembinaan','perdagangan']] },
+  { canonical: 'UPTD Metrologi',                 signatures: [['metro']] },
+];
+
+function resolveAlias(raw, aliasList){
+  const compact = normalizeForMatch(raw).replace(/\s+/g, '');
+  if(!compact) return null;
+  for(const item of aliasList){
+    const cocok = item.signatures.some(sig => sig.every(kw => compact.includes(kw)));
+    if(cocok) return item;
+  }
+  return null;
+}
+
+function groupWithAliases(values, aliasList, emptyLabel, otherLabel){
+  const groups = new Map();
+  values.forEach(v => {
+    const raw = String(v || '').trim().replace(/\s+/g, ' ');
+    const match = resolveAlias(raw, aliasList);
+    let key, disp;
+    if(match){
+      key = '#' + match.canonical.toLowerCase();
+      disp = match.canonical;
+    }else if(!raw && otherLabel && emptyLabel === otherLabel){
+      key = '__other__';
+      disp = otherLabel;
+    }else if(!raw){
+      key = '__empty__';
+      disp = emptyLabel || 'Belum Ditentukan';
+    }else if(otherLabel){
+      key = '__other__';
+      disp = otherLabel;
+    }else{
+      key = raw.toLowerCase();
+      disp = raw;
+    }
+    if(!groups.has(key)) groups.set(key, { count: 0, labels: new Map() });
+    const g = groups.get(key);
+    g.count++;
+    g.labels.set(disp, (g.labels.get(disp) || 0) + 1);
+  });
+  const out = [];
+  for(const g of groups.values()){
+    let best = null, bestN = -1;
+    for(const [lab, n] of g.labels){ if(n > bestN){ bestN = n; best = lab; } }
+    out.push({ label: best, count: g.count });
+  }
+  out.sort((a, b) => b.count - a.count);
+  return out;
+}
+
+const UNI_COLORS = ['#0f9488','#3b82c4','#8b5cf6','#f2994a','#e0507a','#2f9e6e','#c77b2b','#4a7bd0','#d0574a','#7a8b2b','#1a9e9e','#9e6ac7'];
+
+function uniInitials(name, abbr){
+  if(abbr) return abbr.slice(0, 6).toUpperCase();
+  const words = String(name || '').trim().split(/\s+/).filter(Boolean);
+  const huruf = words.filter(w => /^[A-Za-z]/.test(w)).map(w => w[0]);
+  if(huruf.length === 0) return '?';
+  return huruf.slice(0, 4).join('').toUpperCase();
+}
+function uniColor(name){
+  let hash = 0;
+  const s = String(name || '');
+  for(let i=0;i<s.length;i++) hash = s.charCodeAt(i) + ((hash<<5)-hash);
+  return UNI_COLORS[Math.abs(hash) % UNI_COLORS.length];
+}
+
+function renderUniversityBoxes(){
+  const grid = document.getElementById('uniGrid');
+  const summary = document.getElementById('uniSummary');
+  if(!grid) return;
+
+  const groups = groupUniversities(allData.map(r => r.universitas), 'Belum Diketahui');
+
+  if(groups.length === 0){
+    grid.innerHTML = '<div class="uni-empty">Belum ada data universitas.</div>';
+    summary.textContent = '';
+    return;
+  }
+
+  summary.textContent = `${groups.length} universitas • ${allData.length} anak magang`;
+
+  grid.innerHTML = groups.map(g => `
+    <div class="uni-box" data-label="${escapeHtml(g.label)}">
+      <div class="uni-logo" style="background:${uniColor(g.label)}">${escapeHtml(uniInitials(g.label, g.abbr))}</div>
+      <div class="uni-info">
+        <div class="uni-name">${escapeHtml(g.label)}</div>
+        <div class="uni-count">${g.count} anak magang</div>
+      </div>
+    </div>
+  `).join('');
+
+  grid.querySelectorAll('.uni-box').forEach(box => {
+    box.addEventListener('click', () => showUniDetail(box.dataset.label));
+  });
+
+  if(activeUniLabel){
+    const stillExists = groups.some(g => g.label === activeUniLabel);
+    if(stillExists) showUniDetail(activeUniLabel, { skipScroll:true });
+    else hideUniDetail();
+  }
+}
+
+function rowsForUniLabel(label){
+  return allData.filter(r => {
+    const raw = String(r.universitas || '').trim().replace(/\s+/g, ' ');
+    const uni = resolveUniversity(raw);
+    const rowLabel = uni ? uni.canonical : (raw || 'Belum Diketahui');
+    return rowLabel === label;
+  });
+}
+
+let activeUniLabel = null;
+
+function showUniDetail(label, opts = {}){
+  activeUniLabel = label;
+  const rows = rowsForUniLabel(label);
+
+  document.querySelectorAll('#uniGrid .uni-box').forEach(box => {
+    box.classList.toggle('active', box.dataset.label === label);
+  });
+
+  document.getElementById('uniDetailTitle').textContent = `Data Anak Magang — ${label}`;
+  document.getElementById('uniDetailBody').innerHTML = rows.map(rowToTr).join('');
+  document.getElementById('uniDetailCount').textContent = `Menampilkan ${rows.length} anak magang dari ${label}`;
+
+  const card = document.getElementById('uniDetailCard');
+  card.style.display = '';
+  if(!opts.skipScroll) card.scrollIntoView({ behavior:'smooth', block:'start' });
+}
+
+function hideUniDetail(){
+  activeUniLabel = null;
+  document.getElementById('uniDetailCard').style.display = 'none';
+  document.querySelectorAll('#uniGrid .uni-box').forEach(box => box.classList.remove('active'));
+}
+
+document.getElementById('uniDetailClear').addEventListener('click', hideUniDetail);
+
+function anakMagangCsvRows(data){
+  const headers = ['Nama Lengkap', 'Bidang Magang', 'Universitas', 'Periode', 'Durasi', 'Mentor', 'Status', 'Status Sertifikasi'];
+  const rows = data.map(r => [r.nama, r.divisi, r.universitas, r.periode, r.durasi, r.mentor, r.status, r.sertifikasi]);
+  return { headers, rows };
+}
+
+document.getElementById('uniExportCsvBtn').addEventListener('click', () => {
+  const label = activeUniLabel || 'Semua Universitas';
+  const data = activeUniLabel ? rowsForUniLabel(activeUniLabel) : allData;
+  const { headers, rows } = anakMagangCsvRows(data);
+  const slug = label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  const today = new Date().toISOString().slice(0,10);
+  downloadCsv(`data-anak-magang-${slug}-${today}.csv`, headers, rows);
+});
+
+document.getElementById('uniAllExportCsvBtn').addEventListener('click', () => {
+  const { headers, rows } = anakMagangCsvRows(allData);
+  const today = new Date().toISOString().slice(0,10);
+  downloadCsv(`data-anak-magang-semua-universitas-${today}.csv`, headers, rows);
+});
+
+function renderCharts(){
+  if(typeof Chart === 'undefined') throw new Error('Chart.js belum termuat');
+
+  const groups = groupWithAliases(allData.map(r => r.bidangPenempatan), BIDANG_ALIASES, 'Lainnya', 'Lainnya');
+  const divisiLabels = groups.map(g => g.label);
+  const divisiCounts = groups.map(g => g.count);
+  const divisiColors = divisiLabels.map((_, i) => DIVISI_COLORS[i % DIVISI_COLORS.length]);
+
+  const ctxBar = document.getElementById('divisiChart').getContext('2d');
+  if(divisiChartInstance) divisiChartInstance.destroy();
+  divisiChartInstance = new Chart(ctxBar, {
+    type: 'bar',
+    data: {
+      labels: divisiLabels,
+      datasets: [{
+        label: 'Jumlah',
+        data: divisiCounts,
+        backgroundColor: divisiColors,
+        borderRadius: 4,
+        maxBarThickness: 34,
+        categoryPercentage: 0.85,
+        barPercentage: 0.9,
+      }]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{ display:false },
+        tooltip:{ callbacks:{ label: (c) => ` ${c.parsed.y} anak magang` } }
+      },
+      scales:{
+        x:{
+          grid:{ display:false },
+          ticks:{
+            autoSkip:false, maxRotation:90, minRotation:45,
+            font:{ size:10 },
+            callback:function(val){
+              const lab = this.getLabelForValue(val);
+              return lab.length > 16 ? lab.slice(0,15) + '…' : lab;
+            }
+          }
+        },
+        y:{ beginAtZero:true, grid:{ color:'#eef2f2' }, ticks:{ precision:0 } }
+      }
+    }
+  });
+
+  const knownStatus = STATUS_ORDER.filter(s => allData.some(r => r.status === s));
+  const extraStatus = [...new Set(allData.map(r => r.status))].filter(s => s && !STATUS_ORDER.includes(s));
+  const statusLabels = knownStatus.concat(extraStatus);
+  const statusCounts = statusLabels.map(s => allData.filter(r => r.status === s).length);
+  const statusColors = statusLabels.map(s => STATUS_COLORS[s] || '#3b82c4');
+
+  const ctxPie = document.getElementById('statusDonut').getContext('2d');
+  if(donutChartInstance) donutChartInstance.destroy();
+  donutChartInstance = new Chart(ctxPie, {
+    type: 'pie',
+    data: {
+      labels: statusLabels,
+      datasets: [{
+        data: statusCounts,
+        backgroundColor: statusColors,
+        borderColor: '#ffffff',
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{ display:false },
+        tooltip:{ callbacks:{ label: (c) => ` ${c.label}: ${c.parsed} anak magang` } }
+      }
+    }
+  });
+
+  document.getElementById('statusLegend').innerHTML = statusLabels.map((s,i) =>
+    `<span><span class="legend-dot" style="background:${statusColors[i]}"></span>${escapeHtml(s)} (${statusCounts[i]})</span>`
+  ).join('') || '<span style="color:var(--text-faint)">Belum ada data status</span>';
+}
+
+function initials(name){
+  return name.split(' ').filter(Boolean).slice(0,2).map(p=>p[0]).join('').toUpperCase();
+}
+function avatarColor(name){
+  const colors = ['#0f9488','#3b82c4','#8b5cf6','#f2994a','#e0507a','#2f9e6e','#c77b2b'];
+  let hash = 0;
+  for(let i=0;i<name.length;i++) hash = name.charCodeAt(i) + ((hash<<5)-hash);
+  return colors[Math.abs(hash) % colors.length];
+}
+function badgeClass(status){
+  if(status === 'Selesai') return 'selesai';
+  if(status === 'Akan Mulai') return 'akanmulai';
+  return 'aktif';
+}
+function badgeLabel(status){ return status.toUpperCase(); }
+function sertifikasiBadgeClass(sertifikasi){
+  return sertifikasi === 'Sudah Terbit' ? 'sertifikasi-sudah' : 'sertifikasi-belum';
+}
+
+function rowToTr(r){
+  return `
+      <tr>
+        <td>
+          <div class="name-cell">
+            <span class="avatar-round" style="background:${avatarColor(r.nama)}; width:30px; height:30px; font-size:11.5px;">${initials(r.nama)}</span>
+            ${escapeHtml(r.nama)}
+          </div>
+        </td>
+        <td>${escapeHtml(r.divisi)}</td>
+        <td>${escapeHtml(r.universitas)}</td>
+        <td>${escapeHtml(r.periode)}</td>
+        <td>${escapeHtml(r.durasi)}</td>
+        <td>${escapeHtml(r.mentor)}</td>
+        <td><span class="badge ${badgeClass(r.status)}">${escapeHtml(badgeLabel(r.status))}</span></td>
+        <td><span class="badge ${sertifikasiBadgeClass(r.sertifikasi)}">${escapeHtml((r.sertifikasi || 'Belum Terbit').toUpperCase())}</span></td>
+      </tr>`;
+}
+
+function renderTable(){
+  const data = getFilteredData();
+  const tbody = document.getElementById('tableBody');
+
+  if(data.length === 0){
+    tbody.innerHTML = `<tr><td colspan="8"><div class="table-empty">Tidak ada data yang cocok dengan filter saat ini.</div></td></tr>`;
+  }else{
+    tbody.innerHTML = data.map(rowToTr).join('');
+  }
+
+  document.getElementById('tableCount').textContent =
+    `Menampilkan ${data.length} dari ${allData.length} anak magang`;
+}
+
+let rekapYearData = [];      // gabungan {nama, universitas, periodeAwal} dari sheet utama + semua SECONDARY_YEAR_SHEETS
+let rekapActiveYear = null;
+const rekapOpenMonths = new Set(); // menyimpan index bulan (0-11) yang lagi di-expand, per sesi
+
+async function fetchSecondaryYearSheet(src){
+  const json = await fetchSheetViaJsonp(src.SHEET_ID, src.GID || '0');
+  const { headers, rows: rawRows } = parseGvizTable(json);
+  const normalize = s => String(s || '').trim().toLowerCase();
+  const normalizedHeaders = headers.map(normalize);
+  const findCol = target => target ? normalizedHeaders.indexOf(normalize(target)) : -1;
+
+  const map = src.COLUMN_MAP || {};
+  const idx = {
+    nama: findCol(map.nama),
+    universitas: findCol(map.universitas),
+    periodeAwal: findCol(map.periodeAwal),
+  };
+  if(idx.nama === -1) throw new Error(`Kolom "${map.nama}" tidak ditemukan di sheet "${src.label}"`);
+
+  return rawRows
+    .map(row => ({
+      nama: String(row[idx.nama] ?? '').trim(),
+      universitas: idx.universitas > -1 ? String(row[idx.universitas] ?? '').trim() : '',
+      periodeAwal: idx.periodeAwal > -1 ? String(row[idx.periodeAwal] ?? '').trim() : '',
+    }))
+    .filter(r => r.nama);
+}
+
+async function loadRekapTahunData(){
+  const fromMain = allData.map(r => ({ nama: r.nama, universitas: r.universitas, periodeAwal: r.periodeAwalRaw || '' }));
+
+  const secondarySources = CONFIG.SECONDARY_YEAR_SHEETS || [];
+  const secondaryResults = await Promise.all(secondarySources.map(async src => {
+    try{
+      return await fetchSecondaryYearSheet(src);
+    }catch(err){
+      console.warn(`Gagal memuat data tahun "${src.label}" dari sheet terpisah:`, err);
+      return [];
+    }
+  }));
+
+  rekapYearData = [...fromMain, ...secondaryResults.flat()];
+
+  const years = [...new Set(
+    rekapYearData
+      .map(r => parseFlexibleDate(r.periodeAwal))
+      .filter(Boolean)
+      .map(d => d.getFullYear())
+  )].sort((a,b) => a - b);
+
+  if(!rekapActiveYear || !years.includes(rekapActiveYear)){
+    const thisYear = new Date().getFullYear();
+    rekapActiveYear = years.includes(thisYear) ? thisYear : (years[years.length - 1] ?? thisYear);
+  }
+
+  renderRekapTahun(years);
+}
+
+function renderRekapTahun(years){
+  const tabsEl = document.getElementById('yearTabs');
+  const summaryEl = document.getElementById('yearSummary');
+  const gridEl = document.getElementById('monthGrid');
+  if(!tabsEl || !gridEl) return;
+
+  if(!years || years.length === 0){
+    tabsEl.innerHTML = '';
+    summaryEl.textContent = '';
+    gridEl.innerHTML = '<div class="rekap-empty">Belum ada data dengan tanggal Awal Pelaksanaan yang valid.</div>';
+    return;
+  }
+
+  const countByYear = new Map(years.map(y => [y, 0]));
+  const byYearMonth = new Map(); // "year-month" -> [{nama, universitas}]
+  rekapYearData.forEach(r => {
+    const d = parseFlexibleDate(r.periodeAwal);
+    if(!d) return;
+    const y = d.getFullYear();
+    if(!countByYear.has(y)) return;
+    countByYear.set(y, countByYear.get(y) + 1);
+    const key = y + '-' + d.getMonth();
+    if(!byYearMonth.has(key)) byYearMonth.set(key, []);
+    byYearMonth.get(key).push({ nama: r.nama, universitas: r.universitas });
+  });
+
+  tabsEl.innerHTML = years.map(y => `
+    <button type="button" class="year-tab ${y === rekapActiveYear ? 'active' : ''}" data-year="${y}">
+      ${y} <span class="count-pill">(${countByYear.get(y)})</span>
+    </button>
+  `).join('');
+
+  tabsEl.querySelectorAll('.year-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      rekapActiveYear = parseInt(btn.dataset.year, 10);
+      rekapOpenMonths.clear();
+      renderRekapTahun(years);
+    });
+  });
+
+  summaryEl.textContent = `Total ${countByYear.get(rekapActiveYear) || 0} anak magang mulai di tahun ${rekapActiveYear}`;
+
+  gridEl.innerHTML = MONTHS_ID_FULL.map((_, m) => {
+    const key = rekapActiveYear + '-' + m;
+    const people = byYearMonth.get(key) || [];
+    const isEmpty = people.length === 0;
+    const isOpen = rekapOpenMonths.has(m);
+    const monthLabel = MONTHS_ID_FULL[m].charAt(0).toUpperCase() + MONTHS_ID_FULL[m].slice(1);
+
+    return `
+      <div class="month-card ${isEmpty ? 'empty' : ''}">
+        <div class="month-card-head" data-month="${m}">
+          <span class="month-card-title">${monthLabel}</span>
+          <span class="month-card-count ${isEmpty ? 'zero' : ''}">${people.length}</span>
+        </div>
+        ${isEmpty
+          ? `<div class="month-card-empty-text">Belum ada anak magang mulai bulan ini</div>`
+          : `<div class="month-card-list ${isOpen ? 'open' : ''}" id="monthList-${m}">
+              ${people.map(p => `
+                <div class="month-person">
+                  ${escapeHtml(p.nama)}
+                  ${p.universitas ? `<span class="uni">${escapeHtml(p.universitas)}</span>` : ''}
+                </div>
+              `).join('')}
+            </div>`
+        }
+      </div>
+    `;
+  }).join('');
+
+  gridEl.querySelectorAll('.month-card-head').forEach(head => {
+    head.addEventListener('click', () => {
+      const m = parseInt(head.dataset.month, 10);
+      const list = document.getElementById('monthList-' + m);
+      if(!list) return; // bulan kosong, tidak ada yang perlu dibuka
+      if(rekapOpenMonths.has(m)){ rekapOpenMonths.delete(m); list.classList.remove('open'); }
+      else{ rekapOpenMonths.add(m); list.classList.add('open'); }
+    });
+  });
+}
+
+function exportRekapTahunCsv(){
+  if(!rekapActiveYear) return;
+  const headers = ['Bulan', 'Nama Lengkap', 'Universitas'];
+  const rows = [];
+  rekapYearData.forEach(r => {
+    const d = parseFlexibleDate(r.periodeAwal);
+    if(!d || d.getFullYear() !== rekapActiveYear) return;
+    const monthLabel = MONTHS_ID_FULL[d.getMonth()];
+    rows.push([monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1), r.nama, r.universitas]);
+  });
+  rows.sort((a, b) => MONTHS_ID_FULL.findIndex(m => m === a[0].toLowerCase()) - MONTHS_ID_FULL.findIndex(m => m === b[0].toLowerCase()));
+
+  const today = new Date().toISOString().slice(0,10);
+  downloadCsv(`rekap-per-tahun-${rekapActiveYear}-${today}.csv`, headers, rows);
+}
+document.getElementById('rekapExportCsvBtn').addEventListener('click', exportRekapTahunCsv);
+
+// ---------- BUKTI MAGANG MAHASISWA ----------
+let buktiMagangTree = [];       // [{ kecamatan, mahasiswa: [{ no, nama, usahaList:[{nama,alamat,jenis}] }] }]
+let buktiMagangLoaded = false;
+let buktiOpenKec = new Set();
+let buktiActiveMhsKey = null;
+let buktiSearchQuery = '';
+
+function buildBuktiMagangDemoData(){
+  return [
+    { kecamatan: 'Kecamatan Wonocolo', mahasiswa: [
+      { no:'1', nama:'Cecilia Dini Hapsari', usahaList: [
+        { nama:'Dilzan Cookies and Chocolate', alamat:'Jl. Sidosermo II Blok G No.17A, Sby', jenis:'Rumah' },
+        { nama:'Hafizh Food', alamat:'Jl. Sidosermo 3/1 H', jenis:'Booth' },
+        { nama:'Fass 57', alamat:'Sidosermo Gg Damri No 8, Wonocolo', jenis:'Rumah' },
+      ]},
+      { no:'2', nama:'Maria Louisa W', usahaList: [
+        { nama:'Nasi Goreng Mas Aril', alamat:'Jemursari Utara 6 No.4', jenis:'Kedai' },
+        { nama:'Sego Sruduk Cak Siraj', alamat:'Jemur Ngawinan No.50', jenis:'Warung' },
+      ]},
+    ]},
+    { kecamatan: 'Kecamatan Siwalankerto', mahasiswa: [
+      { no:'3', nama:'Indatus Sholichah', usahaList: [
+        { nama:'Radjamoe', alamat:'Jl. Siwalankerto I No. 27-B', jenis:'Rumah' },
+      ]},
+      { no:'4', nama:'Ahmad Fauzan', usahaList: [
+        { nama:'Kedai Bunda by Empatlima Food', alamat:'Jl. Siwalankerto Tengah 81-A', jenis:'Rumah' },
+        { nama:'Kripsus Bu Santi', alamat:'Jl. Siwalankerto No. 98-B', jenis:'Rumah' },
+      ]},
+    ]},
+  ];
+}
+
+function mhsKey(kecamatan, mhs){ return kecamatan + '||' + mhs.no + '||' + mhs.nama; }
+
+async function loadBuktiMagangData(){
+  const bannerEl = document.getElementById('buktiSetupBanner');
+  try{
+    const json = await fetchSheetViaJsonp(CONFIG_BUKTI.SHEET_ID, CONFIG_BUKTI.GID);
+    const { rows } = parseGvizTable(json);
+    const COL = CONFIG_BUKTI.COLS;
+    const norm = v => String(v ?? '').trim();
+    const normLower = v => norm(v).toLowerCase();
+
+    let lastKecamatan = '', lastNo = '', lastNama = '';
+    const kecMap = new Map();
+
+    rows.forEach(row => {
+      const kecRaw = norm(row[COL.kecamatan]);
+      const noRaw = norm(row[COL.no]);
+      const namaRaw = norm(row[COL.nama]);
+      const usahaRaw = norm(row[COL.usaha]);
+      const alamatRaw = norm(row[COL.alamat]);
+      const jenisRaw = norm(row[COL.jenis]);
+
+      // Lewati baris header sheet yang ikut kebaca sebagai data (baris judul kolom baris ke-2).
+      if(normLower(kecRaw) === 'kecamatan' || normLower(namaRaw) === 'nama mahasiswa' || normLower(usahaRaw) === 'nama usaha') return;
+
+      // Kecamatan / No / Nama Mahasiswa memakai cell gabung di sheet — kosong berarti "sama seperti baris di atasnya".
+      if(kecRaw) lastKecamatan = kecRaw;
+      if(noRaw) lastNo = noRaw;
+      if(namaRaw) lastNama = namaRaw;
+
+      if(!lastKecamatan || !lastNama || !usahaRaw) return;
+
+      if(!kecMap.has(lastKecamatan)) kecMap.set(lastKecamatan, new Map());
+      const mhsMap = kecMap.get(lastKecamatan);
+      const key = lastNo + '||' + lastNama;
+      if(!mhsMap.has(key)) mhsMap.set(key, { no: lastNo, nama: lastNama, usahaList: [] });
+      mhsMap.get(key).usahaList.push({ nama: usahaRaw, alamat: alamatRaw, jenis: jenisRaw });
+    });
+
+    const tree = [...kecMap.entries()]
+      .map(([kecamatan, mhsMap]) => ({
+        kecamatan,
+        mahasiswa: [...mhsMap.values()].sort((a, b) => (parseInt(a.no, 10) || 0) - (parseInt(b.no, 10) || 0)),
+      }))
+      .sort((a, b) => a.kecamatan.localeCompare(b.kecamatan, 'id'));
+
+    if(tree.length === 0) throw new Error('Tidak ada baris data yang terbaca dari sheet Bukti Magang Mahasiswa');
+
+    buktiMagangTree = tree;
+    if(bannerEl) bannerEl.innerHTML = '';
+  }catch(err){
+    console.warn('Gagal memuat data Bukti Magang Mahasiswa, memakai data contoh:', err);
+    buktiMagangTree = buildBuktiMagangDemoData();
+    if(bannerEl){
+      bannerEl.innerHTML = `
+        <div class="setup-banner">
+          <span>ℹ️</span>
+          <span>Menampilkan <b>data contoh</b> (${escapeHtml(err.message)}). Pastikan sharing spreadsheet sudah "Anyone with the link" lalu klik Refresh.</span>
+        </div>`;
+    }
+  }
+  buktiMagangLoaded = true;
+  renderBuktiMagang();
+}
+
+function findBuktiMhsByKey(key){
+  for(const kec of buktiMagangTree){
+    for(const m of kec.mahasiswa){
+      if(mhsKey(kec.kecamatan, m) === key) return { kecamatan: kec.kecamatan, mhs: m };
+    }
+  }
+  return null;
+}
+
+function buktiInitials(name){
+  const words = String(name || '').trim().split(/\s+/).filter(Boolean);
+  const s = (words[0]?.[0] || '') + (words[1]?.[0] || '');
+  return (s || '?').toUpperCase();
+}
+
+function renderBuktiMagang(){
+  const listEl = document.getElementById('buktiKecList');
+  const summaryEl = document.getElementById('buktiSummary');
+  if(!listEl) return;
+
+  const totalMhs = buktiMagangTree.reduce((s, k) => s + k.mahasiswa.length, 0);
+  const totalUsaha = buktiMagangTree.reduce((s, k) => s + k.mahasiswa.reduce((s2, m) => s2 + m.usahaList.length, 0), 0);
+  if(summaryEl){
+    summaryEl.textContent = buktiMagangTree.length
+      ? `${buktiMagangTree.length} kecamatan • ${totalMhs} mahasiswa • ${totalUsaha} usaha`
+      : '';
+  }
+
+  const q = buktiSearchQuery.trim().toLowerCase();
+  const filteredTree = buktiMagangTree
+    .map(kec => {
+      const kecMatches = kec.kecamatan.toLowerCase().includes(q);
+      const mahasiswa = kec.mahasiswa.filter(m => kecMatches || m.nama.toLowerCase().includes(q));
+      return { kecamatan: kec.kecamatan, mahasiswa };
+    })
+    .filter(kec => kec.mahasiswa.length > 0);
+
+  if(q){
+    filteredTree.forEach(k => buktiOpenKec.add(k.kecamatan));
+  }
+
+  if(filteredTree.length === 0){
+    listEl.innerHTML = `<div class="bukti-empty-note">${buktiMagangTree.length ? 'Tidak ada yang cocok dengan pencarian.' : (buktiMagangLoaded ? 'Belum ada data.' : 'Memuat data…')}</div>`;
+    return;
+  }
+
+  listEl.innerHTML = filteredTree.map(kec => {
+    const isOpen = buktiOpenKec.has(kec.kecamatan);
+    return `
+      <div class="kec-group ${isOpen ? 'open' : ''}">
+        <div class="kec-head" data-kec-toggle="${escapeHtml(kec.kecamatan)}">
+          <span class="kec-name"><span class="chev">▸</span> ${escapeHtml(kec.kecamatan)}</span>
+          <span class="kec-count-pill">${kec.mahasiswa.length}</span>
+        </div>
+        <div class="mhs-list">
+          ${kec.mahasiswa.map(m => `
+            <div class="mhs-item ${buktiActiveMhsKey === mhsKey(kec.kecamatan, m) ? 'active' : ''}" data-mhs-key="${escapeHtml(mhsKey(kec.kecamatan, m))}">
+              <span>${escapeHtml(m.nama)}</span>
+              <span class="mhs-usaha-count">${m.usahaList.length} usaha</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  listEl.querySelectorAll('[data-kec-toggle]').forEach(head => {
+    head.addEventListener('click', () => {
+      const kec = head.dataset.kecToggle;
+      if(buktiOpenKec.has(kec)) buktiOpenKec.delete(kec); else buktiOpenKec.add(kec);
+      renderBuktiMagang();
+    });
+  });
+
+  listEl.querySelectorAll('[data-mhs-key]').forEach(item => {
+    item.addEventListener('click', () => showBuktiDetail(item.dataset.mhsKey));
+  });
+}
+
+function showBuktiDetail(key){
+  const found = findBuktiMhsByKey(key);
+  if(!found) return;
+  buktiActiveMhsKey = key;
+  buktiOpenKec.add(found.kecamatan);
+
+  document.querySelectorAll('#buktiKecList .mhs-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.mhsKey === key);
+  });
+
+  document.getElementById('buktiDetailEmpty').style.display = 'none';
+  document.getElementById('buktiDetailContent').style.display = '';
+  document.getElementById('buktiDetailAvatar').textContent = buktiInitials(found.mhs.nama);
+  document.getElementById('buktiDetailName').textContent = found.mhs.nama;
+  document.getElementById('buktiDetailMeta').textContent =
+    `${found.kecamatan} • ${found.mhs.usahaList.length} usaha dinaungi`;
+
+  const scroll = document.getElementById('buktiUsahaScroll');
+  if(found.mhs.usahaList.length === 0){
+    scroll.innerHTML = `<div class="bukti-empty-note">Belum ada data usaha untuk mahasiswa ini.</div>`;
+  }else{
+    scroll.innerHTML = found.mhs.usahaList.map(u => `
+      <div class="usaha-card">
+        <div class="usaha-badge">🏪</div>
+        <div class="usaha-info">
+          <div class="usaha-name">${escapeHtml(u.nama)}</div>
+          ${u.alamat ? `<div class="usaha-addr">📍 ${escapeHtml(u.alamat)}</div>` : ''}
+          ${u.jenis ? `<span class="usaha-jenis">${escapeHtml(u.jenis)}</span>` : ''}
+        </div>
+      </div>
+    `).join('');
+  }
+}
+
+document.getElementById('buktiSearch')?.addEventListener('input', e => {
+  buktiSearchQuery = e.target.value;
+  renderBuktiMagang();
+});
+
+function exportBuktiMagangCsv(){
+  const q = buktiSearchQuery.trim().toLowerCase();
+  const source = q
+    ? buktiMagangTree
+        .map(kec => {
+          const kecMatches = kec.kecamatan.toLowerCase().includes(q);
+          const mahasiswa = kec.mahasiswa.filter(m => kecMatches || m.nama.toLowerCase().includes(q));
+          return { kecamatan: kec.kecamatan, mahasiswa };
+        })
+        .filter(kec => kec.mahasiswa.length > 0)
+    : buktiMagangTree;
+
+  const headers = ['Kecamatan', 'No', 'Nama Mahasiswa', 'Nama Usaha', 'Alamat Usaha', 'Jenis Tempat Usaha'];
+  const rows = [];
+  source.forEach(kec => {
+    kec.mahasiswa.forEach(m => {
+      if(m.usahaList.length === 0){
+        rows.push([kec.kecamatan, m.no, m.nama, '', '', '']);
+      }else{
+        m.usahaList.forEach(u => rows.push([kec.kecamatan, m.no, m.nama, u.nama, u.alamat, u.jenis]));
+      }
+    });
+  });
+
+  const today = new Date().toISOString().slice(0,10);
+  const suffix = q ? '-' + q.replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') : '';
+  downloadCsv(`bukti-magang-mahasiswa${suffix}-${today}.csv`, headers, rows);
+}
+document.getElementById('buktiExportCsvBtn')?.addEventListener('click', exportBuktiMagangCsv);
+
+function escapeHtml(str){
+  return String(str ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function csvField(val){
+  const s = String(val ?? '');
+  if(/[",\n\r]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+  return s;
+}
+
+function downloadCsv(filename, headers, rows){
+  const lines = [headers.map(csvField).join(',')];
+  rows.forEach(r => lines.push(r.map(csvField).join(',')));
+  const csvContent = '\ufeff' + lines.join('\r\n');
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function exportFilteredCsv(){
+  const data = getFilteredData();
+  const headers = ['Nama Lengkap', 'Divisi', 'Universitas', 'Periode', 'Durasi', 'Mentor', 'Status', 'Status Sertifikasi'];
+  const rows = data.map(r => [r.nama, r.divisi, r.universitas, r.periode, r.durasi, r.mentor, r.status, r.sertifikasi]);
+
+  const filterBits = [filterState.bidang, filterState.periode, filterState.durasi, filterState.sertifikasi, ...filterState.status].filter(Boolean);
+  const suffix = filterBits.length ? '-' + filterBits.join('-').toLowerCase().replace(/[^a-z0-9]+/g, '-') : '';
+  const today = new Date().toISOString().slice(0,10);
+
+  downloadCsv(`data-anak-magang${suffix}-${today}.csv`, headers, rows);
+}
+document.getElementById('exportCsvBtn').addEventListener('click', exportFilteredCsv);
+
+function updateSyncText(){
+  const el = document.getElementById('syncText');
+  if(!lastSyncDate){ el.textContent = 'Sumber Data: Google Sheets'; return; }
+  const diffMin = Math.max(0, Math.round((Date.now() - lastSyncDate.getTime())/60000));
+  const timeLabel = diffMin === 0 ? 'baru saja' : `${diffMin} menit yang lalu`;
+  el.innerHTML = `Sumber Data: Google Sheets (Terakhir sinkronisasi: ${timeLabel})` +
+    (usingDemoData ? ' <span class="demo-flag">• mode demo</span>' : '');
+}
+setInterval(updateSyncText, 30000);
+
+document.getElementById('filterBidang').addEventListener('change', e => { filterState.bidang = e.target.value; renderTable(); });
+document.getElementById('filterPeriode').addEventListener('change', e => { filterState.periode = e.target.value; renderTable(); });
+document.getElementById('filterDurasi').addEventListener('change', e => { filterState.durasi = e.target.value; renderTable(); });
+document.getElementById('filterSertifikasi').addEventListener('change', e => { filterState.sertifikasi = e.target.value; renderTable(); });
+
+const statusBtn = document.getElementById('filterStatusBtn');
+const statusMenu = document.getElementById('filterStatusMenu');
+const statusLabelEl = document.getElementById('filterStatusLabel');
+const statusCheckboxes = statusMenu.querySelectorAll('input[type="checkbox"]');
+
+function updateStatusLabel(){
+  const n = filterState.status.length;
+  if(n === 0) statusLabelEl.textContent = 'Status';
+  else if(n === 1) statusLabelEl.textContent = filterState.status[0];
+  else statusLabelEl.textContent = `${n} Status`;
+}
+
+statusBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  statusMenu.classList.toggle('open');
+});
+
+statusCheckboxes.forEach(cb => {
+  cb.addEventListener('change', () => {
+    filterState.status = [...statusCheckboxes].filter(c => c.checked).map(c => c.value);
+    updateStatusLabel();
+    renderTable();
+  });
+});
+
+document.addEventListener('click', e => {
+  if(!e.target.closest('#filterStatusWrap')) statusMenu.classList.remove('open');
+});
+
+document.getElementById('tableSearch').addEventListener('input', e => {
+  filterState.search = e.target.value;
+  document.getElementById('headerSearch').value = e.target.value;
+  renderTable();
+});
+document.getElementById('headerSearch').addEventListener('input', e => {
+  filterState.search = e.target.value;
+  document.getElementById('tableSearch').value = e.target.value;
+  renderTable();
+});
+
+// ---------- NOTIFIKASI ----------
+const NOTIF_STORAGE_KEY = 'interndinkop_notifications';
+const NOTIF_STATE_KEY = 'interndinkop_notif_state';
+const NOTIF_MAX = 50;
+
+let notifications = [];
+try{
+  notifications = JSON.parse(localStorage.getItem(NOTIF_STORAGE_KEY) || '[]');
+}catch(err){
+  notifications = [];
+}
+
+function saveNotifications(){
+  try{ localStorage.setItem(NOTIF_STORAGE_KEY, JSON.stringify(notifications.slice(0, NOTIF_MAX))); }
+  catch(err){ /* penyimpanan browser mungkin penuh/tidak tersedia — abaikan */ }
+}
+
+function notifTimeAgo(iso){
+  const diffMin = Math.floor((Date.now() - new Date(iso).getTime()) / 60000);
+  if(diffMin < 1) return 'Baru saja';
+  if(diffMin < 60) return `${diffMin} menit lalu`;
+  const diffHr = Math.floor(diffMin / 60);
+  if(diffHr < 24) return `${diffHr} jam lalu`;
+  return `${Math.floor(diffHr / 24)} hari lalu`;
+}
+
+function addNotification(icon, message){
+  notifications.unshift({
+    id: Date.now() + '-' + Math.random().toString(36).slice(2, 7),
+    icon, message, time: new Date().toISOString(), read: false,
+  });
+  notifications = notifications.slice(0, NOTIF_MAX);
+  saveNotifications();
+  renderNotifications();
+}
+
+function renderNotifications(){
+  const listEl = document.getElementById('notifList');
+  const dotEl = document.getElementById('notifDot');
+  if(!listEl) return;
+
+  const unreadCount = notifications.filter(n => !n.read).length;
+  if(dotEl) dotEl.style.display = unreadCount > 0 ? '' : 'none';
+
+  if(notifications.length === 0){
+    listEl.innerHTML = `<div class="notif-empty">Belum ada notifikasi. Notifikasi akan muncul di sini setiap kali ada perubahan data.</div>`;
+    return;
+  }
+
+  listEl.innerHTML = notifications.map(n => `
+    <div class="notif-item ${n.read ? '' : 'unread'}">
+      <div class="notif-item-ic">${n.icon}</div>
+      <div class="notif-item-body">
+        <div class="notif-item-msg">${escapeHtml(n.message)}</div>
+        <div class="notif-item-time">${notifTimeAgo(n.time)}</div>
+      </div>
+      <button type="button" class="notif-item-del" data-del-id="${n.id}" title="Hapus notifikasi ini">✕</button>
+    </div>
+  `).join('');
+
+  listEl.querySelectorAll('[data-del-id]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      notifications = notifications.filter(n => n.id !== btn.dataset.delId);
+      saveNotifications();
+      renderNotifications();
+    });
+  });
+}
+
+function markNotificationsRead(){
+  let changed = false;
+  notifications.forEach(n => { if(!n.read){ n.read = true; changed = true; } });
+  if(changed){ saveNotifications(); renderNotifications(); }
+}
+
+document.getElementById('notifClearBtn').addEventListener('click', () => {
+  notifications = [];
+  saveNotifications();
+  renderNotifications();
+});
+
+renderNotifications();
+
+// Bandingkan data hasil sinkronisasi terbaru dengan hasil sinkronisasi sebelumnya (tersimpan di
+// browser), lalu buat notifikasi kalau ada perubahan jumlah. Dipanggil setiap loadData() selesai
+// (termasuk data Rekap Per Tahun & Bukti Magang Mahasiswa).
+function checkForDataChanges(){
+  const newState = {
+    total: allData.length,
+    aktif: allData.filter(r => r.status === 'Aktif').length,
+    selesai: allData.filter(r => r.status === 'Selesai').length,
+    buktiMhs: buktiMagangTree.reduce((s, k) => s + k.mahasiswa.length, 0),
+    buktiUsaha: buktiMagangTree.reduce((s, k) => s + k.mahasiswa.reduce((s2, m) => s2 + m.usahaList.length, 0), 0),
+  };
+
+  let prevState = null;
+  try{ prevState = JSON.parse(localStorage.getItem(NOTIF_STATE_KEY) || 'null'); }catch(err){ prevState = null; }
+
+  if(prevState){
+    if(newState.total !== prevState.total){
+      const delta = newState.total - prevState.total;
+      addNotification('👥', `Total anak magang ${delta > 0 ? 'bertambah' : 'berkurang'} dari ${prevState.total} menjadi ${newState.total} (${delta > 0 ? '+' : ''}${delta})`);
+    }
+    if(newState.aktif > prevState.aktif){
+      addNotification('👤', `${newState.aktif - prevState.aktif} anak magang baru berstatus Aktif`);
+    }
+    if(newState.selesai > prevState.selesai){
+      addNotification('✅', `${newState.selesai - prevState.selesai} anak magang baru berstatus Selesai`);
+    }
+    if(newState.buktiMhs !== prevState.buktiMhs){
+      const delta = newState.buktiMhs - prevState.buktiMhs;
+      addNotification('🧾', `Data mahasiswa di Bukti Magang Mahasiswa ${delta > 0 ? 'bertambah' : 'berkurang'} dari ${prevState.buktiMhs} menjadi ${newState.buktiMhs} mahasiswa`);
+    }
+    if(newState.buktiUsaha !== prevState.buktiUsaha){
+      const delta = newState.buktiUsaha - prevState.buktiUsaha;
+      addNotification('🏪', `Jumlah usaha UMKM di Bukti Magang Mahasiswa ${delta > 0 ? 'bertambah' : 'berkurang'} dari ${prevState.buktiUsaha} menjadi ${newState.buktiUsaha}`);
+    }
+    // Kalau tidak ada satu pun angka yang berubah sejak sinkronisasi sebelumnya, beri tahu juga
+    // supaya jelas kalau sistem notifikasi memang berjalan (bukan diam karena error).
+    if(newState.total === prevState.total && newState.aktif === prevState.aktif && newState.selesai === prevState.selesai
+       && newState.buktiMhs === prevState.buktiMhs && newState.buktiUsaha === prevState.buktiUsaha){
+      addNotification('🔄', `Sinkronisasi berhasil, tidak ada perubahan jumlah data sejak terakhir kali`);
+    }
+  }else{
+    // Sinkronisasi pertama di browser ini — belum ada data lama untuk dibandingkan, jadi kirim
+    // notifikasi konfirmasi supaya jelas fitur notifikasi sudah aktif (bukan diam tanpa sebab).
+    addNotification('📡', `Notifikasi aktif — sinkronisasi awal berhasil. Total anak magang: ${newState.total} (Aktif: ${newState.aktif}, Selesai: ${newState.selesai})`);
+  }
+
+  try{ localStorage.setItem(NOTIF_STATE_KEY, JSON.stringify(newState)); }catch(err){ /* abaikan */ }
+}
+
+document.getElementById('refreshBtn').addEventListener('click', loadData);
+
+document.getElementById('notifBtn').addEventListener('click', () => {
+  const menu = document.getElementById('notifMenu');
+  const willOpen = !menu.classList.contains('open');
+  menu.classList.toggle('open', willOpen);
+  if(willOpen) markNotificationsRead();
+});
+document.addEventListener('click', e => {
+  if(!e.target.closest('.notif')) document.getElementById('notifMenu').classList.remove('open');
+});
+
+document.getElementById('sidebarToggle').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.toggle('open');
+});
+
+const pageTitles = {
+  dashboard: 'Selamat Datang, Admin HR',
+  data: 'Data Anak Magang',
+  rekap: 'Rekap Per Tahun',
+  bukti: 'Bukti Magang Mahasiswa',
+  guide: 'Panduan Penggunaan Aplikasi',
+};
+
+const PAGE_IDS = {
+  dashboard: 'dashboardPage',
+  data: 'dataAnakMagangPage',
+  rekap: 'rekapTahunPage',
+  bukti: 'buktiMagangPage',
+  guide: 'userGuidePage',
+};
+
+function goToPage(page, opts){
+  opts = opts || {};
+  if(!PAGE_IDS[page]) page = 'dashboard';
+
+  document.querySelectorAll('#sidebar .nav-item').forEach(n => {
+    n.classList.toggle('active', n.dataset.page === page);
+  });
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('pageGreeting').textContent = pageTitles[page];
+
+  const showEl = document.getElementById(PAGE_IDS[page]);
+  Object.keys(PAGE_IDS).forEach(key => {
+    if(key === page) return;
+    document.getElementById(PAGE_IDS[key]).style.display = 'none';
+  });
+  showEl.style.display = '';
+  // Restart the CSS fade-in animation so switching feels intentional, not a jump-cut.
+  showEl.style.animation = 'none';
+  void showEl.offsetWidth;
+  showEl.style.animation = '';
+
+  if(opts.updateHash !== false){
+    history.replaceState(null, '', '#' + page);
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.querySelectorAll('#sidebar .nav-item').forEach(item => {
+  item.addEventListener('click', () => goToPage(item.dataset.page));
+});
+
+window.addEventListener('hashchange', () => {
+  goToPage(location.hash.replace('#', ''), { updateHash: false });
+});
+
+// Land on the right page immediately if the URL already carries #dashboard / #data.
+goToPage(location.hash.replace('#', '') || 'dashboard', { updateHash: false });
+
+if(CONFIG.AUTO_REFRESH_MINUTES > 0){
+  setInterval(loadData, CONFIG.AUTO_REFRESH_MINUTES * 60000);
+}
+
+loadData();
+</script>
+</body>
+</html>
